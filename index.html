@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Antares SRL desarrolla soluciones de carburo de tungsteno y metalurgia de alta precision para la industria.">
+  <title>Antares SRL | Precision metalurgica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Kanit:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Principal">
+        <a class="brand" href="index.html" aria-label="Antares SRL inicio">
+          <img src="assets/img/logonavbar-navbar.png" alt="Antares SRL">
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Abrir menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-desktop">
+          <ul class="nav-links">
+            <li><a href="pages/sobrenosotros.html" data-i18n="nav.history">Historia</a></li>
+            <li><a href="pages/productosyservicios.html" data-i18n="nav.products">Productos y servicios</a></li>
+            <li><a href="pages/garantiadecalidad.html" data-i18n="nav.quality">Garantia de calidad</a></li>
+            <li><a href="pages/contacto.html" data-i18n="nav.contact">Contacto</a></li>
+          </ul>
+
+          <div class="nav-tools">
+            <div class="language-switcher" role="group" aria-label="Seleccion de idioma">
+              <button class="lang-btn is-active" type="button" data-lang="es" aria-label="Ver sitio en espanol">
+                <span class="flag" aria-hidden="true">AR</span>
+              </button>
+              <button class="lang-btn" type="button" data-lang="en" aria-label="View site in English">
+                <span class="flag" aria-hidden="true">US</span>
+              </button>
+            </div>
+
+            <a class="button button--primary button--small" href="#catalog" data-i18n="nav.catalog">Catalogo tecnico</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <div class="container mobile-menu__inner">
+        <ul class="mobile-menu__links">
+          <li><a href="pages/sobrenosotros.html" data-i18n="nav.history">Historia</a></li>
+          <li><a href="pages/productosyservicios.html" data-i18n="nav.products">Productos y servicios</a></li>
+          <li><a href="pages/garantiadecalidad.html" data-i18n="nav.quality">Garantia de calidad</a></li>
+          <li><a href="pages/contacto.html" data-i18n="nav.contact">Contacto</a></li>
+        </ul>
+
+        <div class="mobile-menu__footer">
+          <div class="language-switcher" role="group" aria-label="Seleccion de idioma responsive">
+            <button class="lang-btn is-active" type="button" data-lang="es" aria-label="Ver sitio en espanol">
+              <span class="flag" aria-hidden="true">AR</span>
+            </button>
+            <button class="lang-btn" type="button" data-lang="en" aria-label="View site in English">
+              <span class="flag" aria-hidden="true">US</span>
+            </button>
+          </div>
+
+          <a class="button button--primary button--small button--block" href="#catalog" data-i18n="nav.catalog">Catalogo tecnico</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section-dark">
+      <div class="hero__media" aria-hidden="true"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <p class="eyebrow eyebrow--gold" data-i18n="hero.eyebrow">Precision metalurgica</p>
+        <h1 class="hero__title">
+          <span data-i18n="hero.titleLine1">Soluciones en</span>
+          <span class="hero__accent" data-i18n="hero.titleLine2">carburo de tungsteno</span>
+        </h1>
+
+        <div class="hero__actions">
+          <a class="button button--primary" href="#catalog" data-i18n="hero.primaryCta">Explorar catalogo</a>
+          <a class="button button--ghost" href="pages/contacto.html" data-i18n="hero.secondaryCta">Solicitar cotizacion</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro section-dark" id="precision">
+      <div class="container intro__grid">
+        <div class="intro__copy">
+          <div class="section-marker"></div>
+          <h2 class="section-title section-title--light" data-i18n="intro.title">Pulvimetalurgia de alta precision</h2>
+          <p class="section-text" data-i18n="intro.text">
+            Lideres regionales con mas de 35 años de trayectoria en el forjado y mecanizado de materiales complejos. Nuestra tecnologia de sintetizado garantiza una densidad molecular optima para los entornos industriales mas exigentes del planeta.
+          </p>
+
+          <div class="metrics">
+            <article class="metric">
+              <strong data-i18n="intro.metric1Value">35+</strong>
+              <span data-i18n="intro.metric1Label">Años de experiencia</span>
+            </article>
+            <article class="metric">
+              <strong data-i18n="intro.metric2Value">ISO</strong>
+              <span data-i18n="intro.metric2Label">Certificacion 9001</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="intro__cards">
+          <article class="feature-card feature-card--dark">
+            <span class="feature-card__icon">##</span>
+            <h3 data-i18n="intro.card1Title">Industrial</h3>
+          </article>
+          <article class="feature-card feature-card--dark feature-card--offset">
+            <span class="feature-card__icon">><</span>
+            <h3 data-i18n="intro.card2Title">Precision</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="solutions">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow eyebrow--muted" data-i18n="portfolio.eyebrow">Portfolio tecnico</p>
+            <h2 class="section-title" data-i18n="portfolio.title">Productos para el core industrial</h2>
+          </div>
+          <p class="section-kicker" data-i18n="portfolio.kicker">
+            Desarrollamos herramientas a medida para procesos de corte, perforacion y desgaste extremo.
+          </p>
+        </div>
+
+        <div class="portfolio__grid" id="catalog">
+          <article class="portfolio-card portfolio-card--large">
+            <div class="portfolio-card__image portfolio-card__image--machining" aria-hidden="true"></div>
+            <div class="portfolio-card__content">
+              <span class="portfolio-card__line"></span>
+              <h3 data-i18n="portfolio.mainCardTitle">Mechas & fresas</h3>
+              <p data-i18n="portfolio.mainCardText">Alta resistencia termica y durabilidad superior en cortes continuos.</p>
+              <a href="pages/productosyservicios.html" class="text-link" data-i18n="portfolio.mainCardLink">Datos tecnicos</a>
+            </div>
+          </article>
+
+          <div class="portfolio-stack">
+            <article class="portfolio-card portfolio-card--dark">
+              <div class="portfolio-card__content portfolio-card__content--tight">
+                <h3 data-i18n="portfolio.sideCard1Title">Escariadores</h3>
+                <p data-i18n="portfolio.sideCard1Text">Acabado superior para tolerancias micrometricas.</p>
+                <span class="portfolio-card__number">01</span>
+              </div>
+            </article>
+
+            <article class="portfolio-card portfolio-card--light">
+              <div class="portfolio-card__content portfolio-card__content--tight">
+                <h3 data-i18n="portfolio.sideCard2Title">WDM & OCT</h3>
+                <p data-i18n="portfolio.sideCard2Text">Componentes especificos para valvuleria y control de flujo.</p>
+                <span class="portfolio-card__number portfolio-card__number--accent">02</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sectors section-dark" id="engineering">
+      <div class="container sectors__grid">
+        <div class="sectors__image" aria-hidden="true"></div>
+
+        <div class="sectors__content">
+          <p class="eyebrow eyebrow--red" data-i18n="sectors.eyebrow">Expertise vertical</p>
+          <h2 class="section-title section-title--light" data-i18n="sectors.title">Sectores estrategicos</h2>
+
+          <div class="sector-list">
+            <article class="sector-item">
+              <span class="sector-item__index">01</span>
+              <div>
+                <h3 data-i18n="sectors.item1Title">Metal Cutting</h3>
+                <p data-i18n="sectors.item1Text">Insertos de metal duro y herramientas rotativas para mecanizado de alta velocidad en aceros nobles y titanio.</p>
+              </div>
+            </article>
+
+            <article class="sector-item">
+              <span class="sector-item__index">02</span>
+              <div>
+                <h3 data-i18n="sectors.item2Title">Oil & Gas</h3>
+                <p data-i18n="sectors.item2Text">Piezas de desgaste antifriccion y herramientas de fondo de pozo para sistemas de control de flujo en entornos abrasivos.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="cta-band__word" aria-hidden="true">ANTARES</div>
+      <div class="container cta-band__content">
+        <h2 data-i18n="cta.title">Transforme su productividad con precision</h2>
+        <a class="button button--light" href="pages/contacto.html" data-i18n="cta.button">Contactar ingenieria</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div>
+        <a class="brand brand--footer" href="index.html">ANTARES SRL</a>
+        <p class="footer__text" data-i18n="footer.description">
+          Soluciones avanzadas en pulvimetalurgia para la industria global de alta exigencia.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="footer__title" data-i18n="footer.linksTitle">Quick links</h3>
+        <ul class="footer__list">
+          <li><a href="pages/productosyservicios.html" data-i18n="footer.link1">Productos y servicios</a></li>
+          <li><a href="pages/garantiadecalidad.html" data-i18n="footer.link2">Technical specs</a></li>
+          <li><a href="pages/sobrenosotros.html" data-i18n="footer.link3">Certificaciones</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer__title" data-i18n="footer.legalTitle">Legal</h3>
+        <ul class="footer__list">
+          <li><a href="#" data-i18n="footer.legal1">Privacy policy</a></li>
+          <li><a href="#" data-i18n="footer.legal2">Terms of service</a></li>
+          <li><a href="#" data-i18n="footer.legal3">Global HQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer__title" data-i18n="footer.contactTitle">Contact</h3>
+        <ul class="footer__list footer__list--contact">
+          <li><a href="mailto:ventas@antares-srl.com">ventas@antares-srl.com</a></li>
+          <li><a href="tel:+541190000000">+54 11 9000 0000</a></li>
+          <li><span data-i18n="footer.country">Made in Argentina</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p data-i18n="footer.copy">© 2026 Antares SRL | Precision metalurgica</p>
+      <p data-i18n="footer.signature">Made in Argentina</p>
+    </div>
+  </footer>
+
+  <script src="script/script.js" defer></script>
+</body>
+</html>
