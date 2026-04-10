@@ -237,7 +237,7 @@ button {
 
 .brand img {
   display: block;
-  height: 1.8rem;
+  height: 2.51rem;
   width: auto;
 }
 
@@ -601,6 +601,11 @@ button {
   box-shadow: var(--shadow-soft);
 }
 
+.about-story__image--landscape {
+  grid-column: 1 / -1;
+  min-height: 12rem;
+}
+
 .about-story__image--powder {
   background:
     linear-gradient(180deg, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18)),
@@ -611,6 +616,12 @@ button {
   background:
     linear-gradient(180deg, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18)),
     url("../assets/img/abuelo.png") center/cover no-repeat;
+}
+
+.about-story__image--landscape {
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),
+    url("../assets/img/pampaolaen.png") center/cover no-repeat;
 }
 
 .about-capacity {
