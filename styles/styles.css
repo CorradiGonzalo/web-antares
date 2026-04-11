@@ -498,7 +498,7 @@ button {
 
 .about-hero__image {
   background:
-    url("https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+    url("../assets/img/siterizadodeprecision.png") center/cover no-repeat;
 }
 
 .about-hero__overlay {
@@ -677,7 +677,7 @@ button {
   inset: 0;
   background:
     linear-gradient(180deg, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.74)),
-    url("https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=1200&q=80") center/cover no-repeat;
+    url("../assets/img/planta.png") center/cover no-repeat;
 }
 
 .capacity-card__index {
