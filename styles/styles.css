@@ -2011,6 +2011,13 @@ button {
   background: #161616;
 }
 
+.feature-card--image-bg {
+  background:
+    linear-gradient(180deg, rgba(22, 22, 22, 0.34), rgba(22, 22, 22, 0.58)),
+    url("../assets/img/antridesgaste.png") center/cover no-repeat,
+    #161616;
+}
+
 .feature-card--offset {
   margin-top: 1.2rem;
 }
