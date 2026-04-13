@@ -441,8 +441,8 @@ button {
 .hero__media {
   background:
     linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.35)),
-    url("https://images.unsplash.com/photo-1565715101841-2320e8ff3c7d?auto=format&fit=crop&w=1400&q=80") center/cover no-repeat;
-  transform: scale(1.02);
+    url("../assets/img/soluciones.png") center/92% auto no-repeat;
+  transform: scale(1);
 }
 
 .hero__overlay {
@@ -719,6 +719,13 @@ button {
   text-transform: uppercase;
 }
 
+.capacity-card__mark--compact {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+}
+
 .capacity-card--narrow {
   border-left: 2px solid #d7ab36;
 }
@@ -728,7 +735,10 @@ button {
   margin-bottom: 2rem;
   color: #d7ab36;
   font-family: "Kanit", sans-serif;
-  font-size: 1.8rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
   text-transform: uppercase;
 }
 
@@ -2061,7 +2071,7 @@ button {
 .portfolio-card__image--machining {
   background:
     linear-gradient(180deg, transparent 35%, rgba(0, 0, 0, 0.8)),
-    url("https://images.unsplash.com/photo-1565431108756-5c4d59bb9fbd?auto=format&fit=crop&w=1200&q=80") center/cover no-repeat;
+    url("../assets/img/fresas.jpeg") center/cover no-repeat;
 }
 
 .portfolio-card__content {
@@ -2102,8 +2112,26 @@ button {
   border-left: 2px solid var(--color-gold);
 }
 
+.portfolio-card--escariadores {
+  background:
+    linear-gradient(180deg, rgba(24, 24, 24, 0.58), rgba(24, 24, 24, 0.64)),
+    url("../assets/img/escariadores.png") center/cover no-repeat;
+}
+
 .portfolio-card--light {
   background: #fff;
+}
+
+.portfolio-card--womoct {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.4)),
+    url("../assets/img/WOM&OCT.png") center/cover no-repeat;
+  color: #101a2b;
+}
+
+.portfolio-card--womoct h3,
+.portfolio-card--womoct p {
+  color: #101a2b;
 }
 
 .portfolio-stack {
@@ -2138,8 +2166,7 @@ button {
   min-height: 30rem;
   background:
     linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-    url("https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=900&q=80") center/cover no-repeat;
-  filter: grayscale(1);
+    url("../assets/img/oil&gas.png") center/cover no-repeat;
 }
 
 .sector-list {
@@ -2407,6 +2434,16 @@ button {
 .footer__list a:hover,
 .footer__list a:focus-visible {
   color: #fff;
+}
+
+.footer__subheading {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
 .footer__bottom {
