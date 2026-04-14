@@ -905,7 +905,7 @@ button {
 }
 
 .products-hero__accent {
-  color: #f3ada9;
+  color: #e08a84;
 }
 
 .products-hero__lead {
@@ -975,7 +975,36 @@ button {
   padding: 1.5rem;
   background: #2b2b2b;
   border: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom-color: rgba(0, 0, 0, 0.28);
   box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.16);
+}
+
+.tech-card--mechas-bg {
+  background:
+    linear-gradient(180deg, rgba(20, 20, 20, 0.22), rgba(20, 20, 20, 0.48)),
+    url("../assets/img/catalogo/brocas/BrocaEscalonadaR.png") center 64%/cover no-repeat,
+    #2b2b2b;
+}
+
+.tech-card--fresas-bg {
+  background:
+    linear-gradient(180deg, rgba(20, 20, 20, 0.22), rgba(20, 20, 20, 0.48)),
+    url("../assets/img/catalogo/fresas/FresaIntegral.png?v=2") center 64%/cover no-repeat,
+    #2b2b2b;
+}
+
+.tech-card--escariadores-bg {
+  background:
+    linear-gradient(180deg, rgba(20, 20, 20, 0.34), rgba(20, 20, 20, 0.68)),
+    url("../assets/img/catalogo/escariadores/Escariador.png") center 64%/cover no-repeat,
+    #2b2b2b;
+}
+
+.tech-card--insertos-bg {
+  background:
+    linear-gradient(180deg, rgba(20, 20, 20, 0.34), rgba(20, 20, 20, 0.68)),
+    url("../assets/img/catalogo/insertos/Insertos.png?v=2") center 64%/cover no-repeat,
+    #2b2b2b;
 }
 
 .tech-card__top {
