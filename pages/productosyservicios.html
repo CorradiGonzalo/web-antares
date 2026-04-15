@@ -110,36 +110,112 @@
         </div>
 
         <div class="products-cards">
-          <article class="tech-card tech-card--mechas-bg">
+          <button class="tech-card tech-card--mechas-bg tech-card--trigger" type="button" data-modal-open="mechas-modal">
             <div class="tech-card__top">
               <span class="tech-card__icon">><</span>
             </div>
             <h3 data-i18n="products.card1Title">Mechas Integrales</h3>
-          </article>
+            <span class="tech-card__tag" data-i18n="products.card1Tag">VER LINEA MECHAS</span>
+          </button>
 
-          <article class="tech-card tech-card--fresas-bg">
+          <button class="tech-card tech-card--fresas-bg tech-card--trigger" type="button" data-modal-open="fresas-modal">
             <div class="tech-card__top">
               <span class="tech-card__icon">><</span>
             </div>
             <h3 data-i18n="products.card2Title">Fresas Integrales</h3>
-          </article>
+            <span class="tech-card__tag" data-i18n="products.card2Tag">VER LINEA FRESAS</span>
+          </button>
 
-          <article class="tech-card tech-card--escariadores-bg">
+          <button class="tech-card tech-card--escariadores-bg tech-card--trigger" type="button" data-modal-open="escariadores-modal">
             <div class="tech-card__top">
               <span class="tech-card__icon">><</span>
             </div>
             <h3 data-i18n="products.card3Title">Escariadores</h3>
-          </article>
+            <span class="tech-card__tag" data-i18n="products.card3Tag">VER LINEA ESCARIADORES</span>
+          </button>
 
-          <article class="tech-card tech-card--insertos-bg">
+          <button class="tech-card tech-card--insertos-bg tech-card--trigger" type="button" data-modal-open="insertos-modal">
             <div class="tech-card__top">
               <span class="tech-card__icon">><</span>
             </div>
             <h3 data-i18n="products.card4Title">Insertos</h3>
-          </article>
+            <span class="tech-card__tag" data-i18n="products.card4Tag">VER LINEA INSERTOS</span>
+          </button>
         </div>
       </div>
     </section>
+
+    <div class="catalog-modal" id="mechas-modal" hidden aria-hidden="true">
+      <div class="catalog-modal__backdrop" data-modal-close></div>
+      <div class="catalog-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="mechas-modal-title">
+        <button class="catalog-modal__close" type="button" aria-label="Cerrar" data-modal-close>X</button>
+        <div class="catalog-modal__header">
+          <span class="catalog-modal__eyebrow" data-i18n="products.mechasModalEyebrow">Catalogo tecnico</span>
+          <h2 class="catalog-modal__title" id="mechas-modal-title" data-i18n="products.mechasModalTitle">Linea Mechas</h2>
+          <p class="catalog-modal__lead" data-i18n="products.mechasModalText">Soluciones de perforacion en metal duro para aplicaciones especiales, con configuraciones adaptadas a cada requerimiento de mecanizado.</p>
+        </div>
+        <div class="catalog-modal__grid">
+          <article class="catalog-modal__card"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.mechasModalCard1Title">Mechas escalonadas</h3></article>
+          <article class="catalog-modal__card"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.mechasModalCard2Title">Canales helicoidales</h3></article>
+          <article class="catalog-modal__card"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.mechasModalCard3Title">Canales rectos</h3></article>
+          <article class="catalog-modal__card"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.mechasModalCard4Title">Con refrigeracion</h3></article>
+        </div>
+      </div>
+    </div>
+
+    <div class="catalog-modal" id="fresas-modal" hidden aria-hidden="true">
+      <div class="catalog-modal__backdrop" data-modal-close></div>
+      <div class="catalog-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="fresas-modal-title">
+        <button class="catalog-modal__close" type="button" aria-label="Cerrar" data-modal-close>X</button>
+        <div class="catalog-modal__header">
+          <span class="catalog-modal__eyebrow" data-i18n="products.fresasModalEyebrow">Catalogo tecnico</span>
+          <h2 class="catalog-modal__title" id="fresas-modal-title" data-i18n="products.fresasModalTitle">Linea Fresas</h2>
+          <p class="catalog-modal__lead" data-i18n="products.fresasModalText">Fresas integrales para operaciones de desbaste, terminacion y mecanizado de alta exigencia en distintos materiales.</p>
+        </div>
+        <div class="catalog-modal__grid">
+          <article class="catalog-modal__card"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.fresasModalCard1Title">Fresas rectas</h3></article>
+          <article class="catalog-modal__card"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.fresasModalCard2Title">Fresas esfericas</h3></article>
+          <article class="catalog-modal__card"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.fresasModalCard3Title">Fresas de desbaste</h3></article>
+          <article class="catalog-modal__card"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.fresasModalCard4Title">Geometrias especiales</h3></article>
+        </div>
+      </div>
+    </div>
+
+    <div class="catalog-modal" id="escariadores-modal" hidden aria-hidden="true">
+      <div class="catalog-modal__backdrop" data-modal-close></div>
+      <div class="catalog-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="escariadores-modal-title">
+        <button class="catalog-modal__close" type="button" aria-label="Cerrar" data-modal-close>X</button>
+        <div class="catalog-modal__header">
+          <span class="catalog-modal__eyebrow" data-i18n="products.escariadoresModalEyebrow">Catalogo tecnico</span>
+          <h2 class="catalog-modal__title" id="escariadores-modal-title" data-i18n="products.escariadoresModalTitle">Linea Escariadores</h2>
+          <p class="catalog-modal__lead" data-i18n="products.escariadoresModalText">Herramientas de terminacion para tolerancias ajustadas, concentricidad controlada y acabados superficiales de precision.</p>
+        </div>
+        <div class="catalog-modal__grid">
+          <article class="catalog-modal__card"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.escariadoresModalCard1Title">Escariadores cilindricos</h3></article>
+          <article class="catalog-modal__card"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.escariadoresModalCard2Title">Escariadores conico</h3></article>
+          <article class="catalog-modal__card"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.escariadoresModalCard3Title">Pasos especiales</h3></article>
+          <article class="catalog-modal__card"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.escariadoresModalCard4Title">Versiones calibradas</h3></article>
+        </div>
+      </div>
+    </div>
+
+    <div class="catalog-modal" id="insertos-modal" hidden aria-hidden="true">
+      <div class="catalog-modal__backdrop" data-modal-close></div>
+      <div class="catalog-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="insertos-modal-title">
+        <button class="catalog-modal__close" type="button" aria-label="Cerrar" data-modal-close>X</button>
+        <div class="catalog-modal__header">
+          <span class="catalog-modal__eyebrow" data-i18n="products.insertosModalEyebrow">Catalogo tecnico</span>
+          <h2 class="catalog-modal__title" id="insertos-modal-title" data-i18n="products.insertosModalTitle">Linea Insertos</h2>
+          <p class="catalog-modal__lead" data-i18n="products.insertosModalText">Insertos de metal duro para operaciones de torneado, fresado y mecanizado de alto rendimiento con excelente resistencia al desgaste.</p>
+        </div>
+        <div class="catalog-modal__grid">
+          <article class="catalog-modal__card"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.insertosModalCard1Title">Triangulares</h3></article>
+          <article class="catalog-modal__card"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.insertosModalCard2Title">Rombicos</h3></article>
+          <article class="catalog-modal__card"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.insertosModalCard3Title">Fresado</h3></article>
+          <article class="catalog-modal__card"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.insertosModalCard4Title">Roscas especiales</h3></article>
+        </div>
+      </div>
+    </div>
 
     <section class="products-section section-dark products-section--oilgas">
       <div class="container">
@@ -158,34 +234,170 @@
           </article>
 
           <div class="oilgas-stack">
-            <article class="oilgas-info oilgas-info--featured">
+            <button class="oilgas-info oilgas-info--featured oilgas-info--trigger" type="button" data-modal-open="wom-oct-modal">
               <h3 data-i18n="products.oilCard1Title">Componentes WOM & OCT</h3>
               <p data-i18n="products.oilCard1Text">Repuestos y ensambles certificados para cabezales de pozo y arboles de navidad. Calidad premium garantizada.</p>
-              <span class="oilgas-info__tag" data-i18n="products.oilCard1Tag">API specification 6A</span>
-            </article>
+              <span class="oilgas-info__tag" data-i18n="products.oilCard1Tag">VER LINEA WOM & OCT</span>
+            </button>
 
             <div class="oilgas-stack__row">
-              <article class="oilgas-info">
+              <button class="oilgas-info oilgas-info--trigger" type="button" data-modal-open="spn-modal">
                 <span class="oilgas-info__mini-icon">|||</span>
-                <h3 data-i18n="products.oilCard2Title">Pistones SPN</h3>
+                <h3 data-i18n="products.oilCard2Title">Pistones</h3>
                 <p data-i18n="products.oilCard2Text">Disenados para bombasas de lodo de alta presion con sellado hermetico superior.</p>
-              </article>
+                <span class="oilgas-info__tag" data-i18n="products.oilCard2Tag">VER LINEA PISTONES SPN</span>
+              </button>
 
-              <article class="oilgas-info">
+              <button class="oilgas-info oilgas-info--trigger" type="button" data-modal-open="valvulas-modal">
                 <span class="oilgas-info__mini-icon">H</span>
                 <h3 data-i18n="products.oilCard3Title">Valvulas & asientos</h3>
                 <p data-i18n="products.oilCard3Text">Acabados superficiales precisos para flujo laminar y reduccion de desgaste.</p>
-              </article>
+                <span class="oilgas-info__tag" data-i18n="products.oilCard3Tag">VER LINEA VALVULAS & ASIENTOS</span>
+              </button>
             </div>
 
             <article class="oilgas-info oilgas-info--gold">
               <h3 data-i18n="products.oilCard4Title">Inspeccion certificada</h3>
-              <p data-i18n="products.oilCard4Text">Cada pieza de nuestra linea Oil & Gas atraviesa ensayos no destructivos (LP, particulas magneticas y ultrasonido).</p>
+              <p data-i18n="products.oilCard4Text">Cada pieza de nuestra linea Oil & Gas atraviesa ensayos no destructivos que garantizan la mas alta calidad.</p>
             </article>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="products-section section-dark products-section--services">
+      <div class="container">
+        <div class="products-heading">
+          <span class="products-heading__line"></span>
+          <h2 data-i18n="products.section3Title">03. Servicios</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card service-card--intro">
+            <span class="service-card__eyebrow" data-i18n="products.servicesEyebrow">Soporte tecnico especializado</span>
+            <h3 data-i18n="products.servicesIntroTitle">Servicios para extender la vida util de sus herramientas y componentes</h3>
+            <p data-i18n="products.servicesIntroText">Acompañamos a nuestros clientes con procesos de reacondicionamiento, recupero y asistencia tecnica para mantener rendimiento, precision y continuidad operativa.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-card__icon">><</span>
+            <h3 data-i18n="products.service1Title">Reafilado de herramientas</h3>
+            <p data-i18n="products.service1Text">Servicio de reafilado para herramientas de corte, recuperando geometria, filo y desempeño operativo.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-card__icon">><</span>
+            <h3 data-i18n="products.service2Title">Recupero de valvulas</h3>
+            <p data-i18n="products.service2Text">Evaluacion y recuperacion de determinadas valvulas y componentes sometidos a desgaste en servicio.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-card__icon">><</span>
+            <h3 data-i18n="products.service3Title">Reparacion de piezas</h3>
+            <p data-i18n="products.service3Text">Trabajos de reacondicionamiento sobre componentes criticos para prolongar vida util y reducir tiempos de parada.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-card__icon">><</span>
+            <h3 data-i18n="products.service4Title">Asistencia tecnica</h3>
+            <p data-i18n="products.service4Text">Acompañamiento tecnico para diagnostico, seleccion de solucion y seguimiento del desempeño en aplicacion.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="catalog-modal" id="wom-oct-modal" hidden aria-hidden="true">
+      <div class="catalog-modal__backdrop" data-modal-close></div>
+      <div class="catalog-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="wom-oct-modal-title">
+        <button class="catalog-modal__close" type="button" aria-label="Cerrar" data-modal-close>X</button>
+        <div class="catalog-modal__header">
+          <span class="catalog-modal__eyebrow" data-i18n="products.oilModalEyebrow">Catalogo tecnico</span>
+          <h2 class="catalog-modal__title" id="wom-oct-modal-title" data-i18n="products.oilModalTitle">Linea WOM & OCT</h2>
+          <p class="catalog-modal__lead" data-i18n="products.oilModalText">Familias de componentes para control de presion, cabezales de pozo y conjuntos especiales fabricados bajo requerimientos tecnicos exigentes.</p>
+        </div>
+
+        <div class="catalog-modal__grid">
+          <article class="catalog-modal__card">
+            <span class="catalog-modal__mark">><</span>
+            <h3 data-i18n="products.oilModalCard1Title">Asientos</h3>
+          </article>
+          <article class="catalog-modal__card">
+            <span class="catalog-modal__mark">><</span>
+            <h3 data-i18n="products.oilModalCard2Title">Boquillas</h3>
+          </article>
+          <article class="catalog-modal__card">
+            <span class="catalog-modal__mark">><</span>
+            <h3 data-i18n="products.oilModalCard3Title">Valvulas</h3>
+          </article>
+          <article class="catalog-modal__card">
+            <span class="catalog-modal__mark">><</span>
+            <h3 data-i18n="products.oilModalCard4Title">Componentes especiales</h3>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="catalog-modal" id="spn-modal" hidden aria-hidden="true">
+      <div class="catalog-modal__backdrop" data-modal-close></div>
+      <div class="catalog-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="spn-modal-title">
+        <button class="catalog-modal__close" type="button" aria-label="Cerrar" data-modal-close>X</button>
+        <div class="catalog-modal__header">
+          <span class="catalog-modal__eyebrow" data-i18n="products.spnModalEyebrow">Catalogo tecnico</span>
+          <h2 class="catalog-modal__title" id="spn-modal-title" data-i18n="products.spnModalTitle">Linea Pistones SPN</h2>
+          <p class="catalog-modal__lead" data-i18n="products.spnModalText">Soluciones para sistemas de bombeo de lodo y conjuntos sometidos a alta presion, con foco en sellado, durabilidad y repetibilidad dimensional.</p>
+        </div>
+
+        <div class="catalog-modal__grid">
+          <article class="catalog-modal__card catalog-modal__card--spm-bg">
+            <span class="catalog-modal__mark">><</span>
+            <h3 data-i18n="products.spnModalCard1Title">Pistones SPM</h3>
+          </article>
+          <article class="catalog-modal__card">
+            <span class="catalog-modal__mark">><</span>
+            <h3 data-i18n="products.spnModalCard2Title">Pistones sellados</h3>
+          </article>
+          <article class="catalog-modal__card">
+            <span class="catalog-modal__mark">><</span>
+            <h3 data-i18n="products.spnModalCard3Title">Cuerpos especiales</h3>
+          </article>
+          <article class="catalog-modal__card">
+            <span class="catalog-modal__mark">><</span>
+            <h3 data-i18n="products.spnModalCard4Title">Repuestos criticos</h3>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="catalog-modal" id="valvulas-modal" hidden aria-hidden="true">
+      <div class="catalog-modal__backdrop" data-modal-close></div>
+      <div class="catalog-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="valvulas-modal-title">
+        <button class="catalog-modal__close" type="button" aria-label="Cerrar" data-modal-close>X</button>
+        <div class="catalog-modal__header">
+          <span class="catalog-modal__eyebrow" data-i18n="products.valvulasModalEyebrow">Catalogo tecnico</span>
+          <h2 class="catalog-modal__title" id="valvulas-modal-title" data-i18n="products.valvulasModalTitle">Linea Valvulas & asientos</h2>
+          <p class="catalog-modal__lead" data-i18n="products.valvulasModalText">Componentes de cierre y apoyo mecanizados para condiciones severas de servicio, con terminaciones de precision y alta resistencia al desgaste.</p>
+        </div>
+
+        <div class="catalog-modal__grid">
+          <article class="catalog-modal__card">
+            <span class="catalog-modal__mark">><</span>
+            <h3 data-i18n="products.valvulasModalCard1Title">Valvulas</h3>
+          </article>
+          <article class="catalog-modal__card">
+            <span class="catalog-modal__mark">><</span>
+            <h3 data-i18n="products.valvulasModalCard2Title">Asientos</h3>
+          </article>
+          <article class="catalog-modal__card">
+            <span class="catalog-modal__mark">><</span>
+            <h3 data-i18n="products.valvulasModalCard3Title">Conjuntos calibrados</h3>
+          </article>
+          <article class="catalog-modal__card">
+            <span class="catalog-modal__mark">><</span>
+            <h3 data-i18n="products.valvulasModalCard4Title">Piezas especiales</h3>
+          </article>
+        </div>
+      </div>
+    </div>
 
     <section class="products-band">
       <div class="container products-band__content">
