@@ -29,11 +29,13 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
-  min-width: 320px;
+  min-width: 0;
+  overflow-x: hidden;
   font-family: "Barlow", sans-serif;
   background: var(--color-bg);
   color: var(--color-text);
@@ -969,6 +971,18 @@ button {
   text-transform: uppercase;
 }
 
+.products-heading h2,
+.tech-card h3,
+.tech-card__tag,
+.oilgas-info h3,
+.oilgas-info__tag,
+.service-card h3,
+.catalog-modal__title,
+.catalog-modal__card h3,
+.products-band h2 {
+  overflow-wrap: anywhere;
+}
+
 .products-cards {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1204,7 +1218,7 @@ button {
 .catalog-modal {
   position: fixed;
   inset: 0;
-  z-index: 80;
+  z-index: 220;
   display: grid;
   place-items: center;
   padding: 1.5rem;
@@ -1350,6 +1364,13 @@ button {
   grid-column: 1 / -1;
   background: linear-gradient(135deg, #1b1b1b, #121212);
   border-left: 3px solid #d7ab36;
+}
+
+.service-card--reafilado {
+  background:
+    linear-gradient(180deg, rgba(14, 14, 14, 0.45), rgba(14, 14, 14, 0.78)),
+    url("../assets/img/servicios/reafilado.jpeg") center/cover no-repeat,
+    #2b2b2b;
 }
 
 .service-card__eyebrow {
@@ -2764,6 +2785,7 @@ button {
 
   .about-story__media,
   .products-cards,
+  .services-grid,
   .quality-control__row,
   .contact-form,
   .contact-details,
@@ -2819,6 +2841,14 @@ button {
 
   .cta-band__content {
     align-items: flex-start;
+  }
+
+  .products-heading {
+    align-items: flex-start;
+  }
+
+  .products-heading h2 {
+    min-width: 0;
   }
 
   .footer__bottom {
@@ -2884,8 +2914,85 @@ button {
     padding: 2rem 1.5rem;
   }
 
+  .products-hero {
+    padding: 2.2rem 0 2rem;
+  }
+
+  .products-hero__lead {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .products-hero__cert {
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    font-size: 0.72rem;
+  }
+
+  .products-heading {
+    gap: 0.7rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .products-heading h2 {
+    font-size: clamp(1.45rem, 8vw, 2rem);
+    line-height: 1.08;
+  }
+
+  .tech-card {
+    min-height: 15.5rem;
+    padding: 1.25rem;
+  }
+
+  .tech-card__top {
+    margin-bottom: 1.5rem;
+  }
+
+  .tech-card h3 {
+    font-size: clamp(1.25rem, 7vw, 1.55rem);
+  }
+
+  .tech-card__tag {
+    margin-top: 1.5rem;
+    font-size: 0.66rem;
+    letter-spacing: 0.12em;
+  }
+
+  .oilgas-hero-card__content {
+    left: 1.25rem;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    max-width: none;
+  }
+
+  .oilgas-info,
+  .service-card {
+    padding: 1.25rem;
+  }
+
+  .catalog-modal {
+    padding: 1rem;
+  }
+
   .catalog-modal__dialog {
-    padding: 1.5rem;
+    padding: 1.25rem;
+  }
+
+  .catalog-modal__close {
+    top: 0.7rem;
+    right: 0.7rem;
+  }
+
+  .products-band h2 {
+    font-size: clamp(1.7rem, 8vw, 2.4rem);
+  }
+
+  .products-band__cta {
+    justify-items: stretch;
+  }
+
+  .products-band__cta .button {
+    width: 100%;
   }
 
   .quality-iso__card {
