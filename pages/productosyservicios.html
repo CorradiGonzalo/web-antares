@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -16,9 +16,9 @@
   <header class="site-header">
     <div class="container">
       <nav class="navbar" aria-label="Principal">
-        <a class="brand" href="../index.html" aria-label="Antares SRL inicio">
+        <div class="brand" aria-label="Antares SRL">
           <img src="../assets/img/logonavbar-navbar.png" alt="Antares SRL">
-        </a>
+        </div>
 
         <button
           class="menu-toggle"
@@ -34,6 +34,7 @@
 
         <div class="nav-desktop">
           <ul class="nav-links">
+            <li><a href="../index.html" data-i18n="nav.home">Inicio</a></li>
             <li><a href="sobrenosotros.html" data-i18n="nav.history">Historia</a></li>
             <li><a href="productosyservicios.html" data-i18n="nav.products">Productos y servicios</a></li>
             <li><a href="garantiadecalidad.html" data-i18n="nav.quality">Garantia de calidad</a></li>
@@ -49,8 +50,6 @@
                 <span class="flag" aria-hidden="true">US</span>
               </button>
             </div>
-
-            <a class="button button--primary button--small" href="contacto.html" data-i18n="products.quoteButtonNav">Solicitar cotizacion</a>
           </div>
         </div>
       </nav>
@@ -59,6 +58,7 @@
     <div class="mobile-menu" id="mobile-menu" hidden>
       <div class="container mobile-menu__inner">
         <ul class="mobile-menu__links">
+          <li><a href="../index.html" data-i18n="nav.home">Inicio</a></li>
           <li><a href="sobrenosotros.html" data-i18n="nav.history">Historia</a></li>
           <li><a href="productosyservicios.html" data-i18n="nav.products">Productos y servicios</a></li>
           <li><a href="garantiadecalidad.html" data-i18n="nav.quality">Garantia de calidad</a></li>
@@ -74,8 +74,6 @@
               <span class="flag" aria-hidden="true">US</span>
             </button>
           </div>
-
-          <a class="button button--primary button--small button--block" href="contacto.html" data-i18n="products.quoteButtonNav">Solicitar cotizacion</a>
         </div>
       </div>
     </div>
@@ -109,38 +107,44 @@
           <h2 data-i18n="products.section1Title">01. Herramental de corte</h2>
         </div>
 
-        <div class="products-cards">
-          <button class="tech-card tech-card--mechas-bg tech-card--trigger" type="button" data-modal-open="mechas-modal">
-            <div class="tech-card__top">
-              <span class="tech-card__icon">><</span>
-            </div>
-            <h3 data-i18n="products.card1Title">Mechas Integrales</h3>
-            <span class="tech-card__tag" data-i18n="products.card1Tag">VER LINEA MECHAS</span>
-          </button>
+        <div class="tooling-grid">
+          <div class="products-cards products-cards--tooling">
+            <button class="tech-card tech-card--mechas-bg tech-card--trigger" type="button" data-modal-open="mechas-modal">
+              <div class="tech-card__top">
+                <span class="tech-card__icon">><</span>
+              </div>
+              <h3 data-i18n="products.card1Title">Mechas Integrales</h3>
+              <span class="tech-card__tag" data-i18n="products.card1Tag">VER LINEA MECHAS</span>
+            </button>
 
-          <button class="tech-card tech-card--fresas-bg tech-card--trigger" type="button" data-modal-open="fresas-modal">
-            <div class="tech-card__top">
-              <span class="tech-card__icon">><</span>
-            </div>
-            <h3 data-i18n="products.card2Title">Fresas Integrales</h3>
-            <span class="tech-card__tag" data-i18n="products.card2Tag">VER LINEA FRESAS</span>
-          </button>
+            <button class="tech-card tech-card--fresas-bg tech-card--trigger" type="button" data-modal-open="fresas-modal">
+              <div class="tech-card__top">
+                <span class="tech-card__icon">><</span>
+              </div>
+              <h3 data-i18n="products.card2Title">Fresas Integrales</h3>
+              <span class="tech-card__tag" data-i18n="products.card2Tag">VER LINEA FRESAS</span>
+            </button>
 
-          <button class="tech-card tech-card--escariadores-bg tech-card--trigger" type="button" data-modal-open="escariadores-modal">
-            <div class="tech-card__top">
-              <span class="tech-card__icon">><</span>
-            </div>
-            <h3 data-i18n="products.card3Title">Escariadores</h3>
-            <span class="tech-card__tag" data-i18n="products.card3Tag">VER LINEA ESCARIADORES</span>
-          </button>
+            <button class="tech-card tech-card--escariadores-bg tech-card--trigger" type="button" data-modal-open="escariadores-modal">
+              <div class="tech-card__top">
+                <span class="tech-card__icon">><</span>
+              </div>
+              <h3 data-i18n="products.card3Title">Escariadores</h3>
+              <span class="tech-card__tag" data-i18n="products.card3Tag">VER LINEA ESCARIADORES</span>
+            </button>
 
-          <button class="tech-card tech-card--insertos-bg tech-card--trigger" type="button" data-modal-open="insertos-modal">
-            <div class="tech-card__top">
-              <span class="tech-card__icon">><</span>
-            </div>
-            <h3 data-i18n="products.card4Title">Insertos</h3>
-            <span class="tech-card__tag" data-i18n="products.card4Tag">VER LINEA INSERTOS</span>
-          </button>
+            <button class="tech-card tech-card--insertos-bg tech-card--trigger" type="button" data-modal-open="insertos-modal">
+              <div class="tech-card__top">
+                <span class="tech-card__icon">><</span>
+              </div>
+              <h3 data-i18n="products.card4Title">Insertos</h3>
+              <span class="tech-card__tag" data-i18n="products.card4Tag">VER LINEA INSERTOS</span>
+            </button>
+          </div>
+
+          <article class="tooling-hero-card" aria-label="Herramental de corte">
+            <div class="tooling-hero-card__image" aria-hidden="true"></div>
+          </article>
         </div>
       </div>
     </section>
@@ -276,13 +280,13 @@
           <article class="service-card service-card--intro">
             <span class="service-card__eyebrow" data-i18n="products.servicesEyebrow">Soporte tecnico especializado</span>
             <h3 data-i18n="products.servicesIntroTitle">Servicios para extender la vida util de sus herramientas y componentes</h3>
-            <p data-i18n="products.servicesIntroText">AcompaÃ±amos a nuestros clientes con procesos de reacondicionamiento, recupero y asistencia tecnica para mantener rendimiento, precision y continuidad operativa.</p>
+            <p data-i18n="products.servicesIntroText">Acompa�amos a nuestros clientes con procesos de reacondicionamiento, recupero y asistencia tecnica para mantener rendimiento, precision y continuidad operativa.</p>
           </article>
 
           <article class="service-card service-card--reafilado">
             <span class="service-card__icon">><</span>
             <h3 data-i18n="products.service1Title">Reafilado de herramientas</h3>
-            <p data-i18n="products.service1Text">Servicio de reafilado para herramientas de corte, recuperando geometria, filo y desempeÃ±o operativo.</p>
+            <p data-i18n="products.service1Text">Servicio de reafilado para herramientas de corte, recuperando geometria, filo y desempe�o operativo.</p>
           </article>
 
           <article class="service-card">
@@ -300,7 +304,7 @@
           <article class="service-card">
             <span class="service-card__icon">><</span>
             <h3 data-i18n="products.service4Title">Asistencia tecnica</h3>
-            <p data-i18n="products.service4Text">AcompaÃ±amiento tecnico para diagnostico, seleccion de solucion y seguimiento del desempeÃ±o en aplicacion.</p>
+            <p data-i18n="products.service4Text">Acompa�amiento tecnico para diagnostico, seleccion de solucion y seguimiento del desempe�o en aplicacion.</p>
           </article>
         </div>
       </div>
@@ -402,7 +406,7 @@
     <section class="products-band">
       <div class="container products-band__content">
         <div>
-          <h2 data-i18n="products.bandTitle">Â¿Requiere una solucion a medida?</h2>
+          <h2 data-i18n="products.bandTitle">�Requiere una solucion a medida?</h2>
           <p data-i18n="products.bandText">"La precision no es una opcion, es nuestro estandar de fabricacion."</p>
         </div>
         <div class="products-band__cta">
@@ -443,9 +447,6 @@
         <ul class="footer__list footer__list--contact">
           <li><a href="mailto:info@antaressrl.com.ar" data-i18n="footer.contactEmail">info@antaressrl.com.ar</a></li>
           <li><a href="tel:+5493515198888" data-i18n="footer.contactPhone">+54 9 3515198888</a></li>
-          <li><span class="footer__subheading" data-i18n="footer.boliviaTitle">ANTARES EN BOLIVIA</span></li>
-          <li><a href="mailto:comercialbolivia@antaressrl.com.ar" data-i18n="footer.boliviaEmail">comercialbolivia@antaressrl.com.ar</a></li>
-          <li><a href="tel:+5493515198888" data-i18n="footer.boliviaPhone">+54 9 3515198888</a></li>
         </ul>
       </div>
     </div>

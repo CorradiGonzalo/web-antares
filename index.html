@@ -16,9 +16,9 @@
   <header class="site-header">
     <div class="container">
       <nav class="navbar" aria-label="Principal">
-        <a class="brand" href="index.html" aria-label="Antares SRL inicio">
+        <div class="brand" aria-label="Antares SRL">
           <img src="assets/img/logonavbar-navbar.png" alt="Antares SRL">
-        </a>
+        </div>
 
         <button
           class="menu-toggle"
@@ -34,6 +34,7 @@
 
         <div class="nav-desktop">
           <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
             <li><a href="pages/sobrenosotros.html" data-i18n="nav.history">Historia</a></li>
             <li><a href="pages/productosyservicios.html" data-i18n="nav.products">Productos y servicios</a></li>
             <li><a href="pages/garantiadecalidad.html" data-i18n="nav.quality">Garantia de calidad</a></li>
@@ -49,8 +50,6 @@
                 <span class="flag" aria-hidden="true">US</span>
               </button>
             </div>
-
-            <a class="button button--primary button--small" href="#catalog" data-i18n="nav.catalog">Catalogo tecnico</a>
           </div>
         </div>
       </nav>
@@ -59,6 +58,7 @@
     <div class="mobile-menu" id="mobile-menu" hidden>
       <div class="container mobile-menu__inner">
         <ul class="mobile-menu__links">
+          <li><a href="index.html" data-i18n="nav.home">Inicio</a></li>
           <li><a href="pages/sobrenosotros.html" data-i18n="nav.history">Historia</a></li>
           <li><a href="pages/productosyservicios.html" data-i18n="nav.products">Productos y servicios</a></li>
           <li><a href="pages/garantiadecalidad.html" data-i18n="nav.quality">Garantia de calidad</a></li>
@@ -74,8 +74,6 @@
               <span class="flag" aria-hidden="true">US</span>
             </button>
           </div>
-
-          <a class="button button--primary button--small button--block" href="#catalog" data-i18n="nav.catalog">Catalogo tecnico</a>
         </div>
       </div>
     </div>
@@ -87,10 +85,9 @@
       <div class="hero__overlay" aria-hidden="true"></div>
       <div class="container hero__content">
         <p class="eyebrow eyebrow--gold" data-i18n="hero.eyebrow">Precision metalurgica</p>
-        <h1 class="hero__title">
-          <span data-i18n="hero.titleLine1">Soluciones en</span>
-          <span class="hero__accent" data-i18n="hero.titleLine2">carburo de tungsteno</span>
-        </h1>
+        <div class="hero__brand-mark" aria-label="Antares SRL">
+          <img src="assets/img/logonavbar-navbar.png" alt="Antares SRL">
+        </div>
 
         <div class="hero__actions">
           <a class="button button--primary" href="#catalog" data-i18n="hero.primaryCta">Explorar catalogo</a>
@@ -177,16 +174,17 @@
       </div>
     </section>
 
-    <section class="sectors section-dark" id="engineering">
-      <div class="container sectors__grid">
-        <div class="sectors__image" aria-hidden="true"></div>
-
-        <div class="sectors__content">
+    <section class="sectors section-dark sectors--reveal" id="engineering" data-reveal-section>
+      <div class="container">
+        <div class="sectors__intro">
           <p class="eyebrow eyebrow--red" data-i18n="sectors.eyebrow">Expertise vertical</p>
           <h2 class="section-title section-title--light" data-i18n="sectors.title">Sectores estrategicos</h2>
+          <span class="sectors__hint" data-i18n="sectors.hint" aria-hidden="true">Seguir bajando</span>
+        </div>
 
+        <div class="sectors__reveal">
           <div class="sector-list">
-            <article class="sector-item">
+            <article class="sector-card sector-card--oil">
               <span class="sector-item__index">01</span>
               <div>
                 <h3 data-i18n="sectors.item1Title">Oil & Gas</h3>
@@ -194,11 +192,43 @@
               </div>
             </article>
 
-            <article class="sector-item">
+            <article class="sector-card sector-card--auto">
               <span class="sector-item__index">02</span>
               <div>
-                <h3 data-i18n="sectors.item2Title">Metal Cutting</h3>
-                <p data-i18n="sectors.item2Text">Insertos de metal duro y herramientas rotativas para mecanizado de alta velocidad en aceros.</p>
+                <h3 data-i18n="sectors.item2Title">Autopartistas</h3>
+                <p data-i18n="sectors.item2Text">Herramental de corte y componentes de desgaste para procesos seriados de alta precision.</p>
+              </div>
+            </article>
+
+            <article class="sector-card sector-card--agro">
+              <span class="sector-item__index">03</span>
+              <div>
+                <h3 data-i18n="sectors.item3Title">Agropecuario</h3>
+                <p data-i18n="sectors.item3Text">Soluciones resistentes al desgaste para maquinaria, mantenimiento y produccion agroindustrial.</p>
+              </div>
+            </article>
+
+            <article class="sector-card sector-card--aero">
+              <span class="sector-item__index">04</span>
+              <div>
+                <h3 data-i18n="sectors.item4Title">Aeronautico</h3>
+                <p data-i18n="sectors.item4Text">Herramientas de precision para mecanizado de materiales exigentes y piezas de alto valor tecnico.</p>
+              </div>
+            </article>
+
+            <article class="sector-card sector-card--wood">
+              <span class="sector-item__index">05</span>
+              <div>
+                <h3 data-i18n="sectors.item5Title">Industria maderera</h3>
+                <p data-i18n="sectors.item5Text">Herramental de corte durable para procesos de madera, tableros y produccion industrial continua.</p>
+              </div>
+            </article>
+
+            <article class="sector-card sector-card--ortho">
+              <span class="sector-item__index">06</span>
+              <div>
+                <h3 data-i18n="sectors.item6Title">Industria ortopedica</h3>
+                <p data-i18n="sectors.item6Text">Herramientas especiales para fabricantes de protesis, implantes y componentes de alta precision.</p>
               </div>
             </article>
           </div>
@@ -210,7 +240,7 @@
       <div class="cta-band__word" aria-hidden="true">ANTARES</div>
       <div class="container cta-band__content">
         <h2 data-i18n="cta.title">Transforme su productividad con precision</h2>
-        <a class="button button--light" href="pages/contacto.html" data-i18n="cta.button">Contactar ingenieria</a>
+        <a class="button button--light" href="mailto:karinacorradi@antaressrl.com.ar" data-i18n="cta.button">Contactar ventas</a>
       </div>
     </section>
   </main>
@@ -247,9 +277,6 @@
         <ul class="footer__list footer__list--contact">
           <li><a href="mailto:info@antaressrl.com.ar" data-i18n="footer.contactEmail">info@antaressrl.com.ar</a></li>
           <li><a href="tel:+5493515198888" data-i18n="footer.contactPhone">+54 9 3515198888</a></li>
-          <li><span class="footer__subheading" data-i18n="footer.boliviaTitle">ANTARES EN BOLIVIA</span></li>
-          <li><a href="mailto:comercialbolivia@antaressrl.com.ar" data-i18n="footer.boliviaEmail">comercialbolivia@antaressrl.com.ar</a></li>
-          <li><a href="tel:+5493515198888" data-i18n="footer.boliviaPhone">+54 9 3515198888</a></li>
         </ul>
       </div>
     </div>

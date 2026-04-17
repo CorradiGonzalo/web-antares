@@ -227,6 +227,10 @@ button {
   gap: 1rem;
 }
 
+body[data-page="home"] .navbar {
+  justify-content: flex-end;
+}
+
 .brand {
   display: inline-flex;
   align-items: center;
@@ -243,9 +247,18 @@ button {
   width: auto;
 }
 
+body[data-page="home"] .site-header .brand {
+  display: none;
+}
+
 .brand--footer {
   display: inline-block;
-  margin-bottom: 1rem;
+  margin-bottom: 0.55rem;
+  transform: translateY(-0.2rem);
+}
+
+.brand--footer img {
+  height: 2.15rem;
 }
 
 .nav-desktop {
@@ -443,7 +456,7 @@ button {
 .hero__media {
   background:
     linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.35)),
-    url("../assets/img/soluciones.png") center/92% auto no-repeat;
+    url("../assets/img/soluciones.png") center/cover no-repeat;
   transform: scale(1);
 }
 
@@ -457,8 +470,18 @@ button {
   position: relative;
   display: grid;
   align-content: center;
+  justify-items: center;
   min-height: calc(100vh - var(--header-height));
   padding: 5rem 0 6rem;
+  text-align: center;
+}
+
+.hero__content .eyebrow {
+  margin-bottom: -0.85rem;
+  transform: translateY(0.55rem);
+  text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .hero__title {
@@ -479,9 +502,25 @@ button {
   color: #e02b2b;
 }
 
+.hero__brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: min(30rem, 78vw);
+  margin-top: -0.25rem;
+  padding: 0 clamp(1rem, 3vw, 2rem) clamp(1rem, 3vw, 2rem);
+  filter: drop-shadow(0 1.25rem 2rem rgba(0, 0, 0, 0.48));
+}
+
+.hero__brand-mark img {
+  width: 100%;
+  height: auto;
+}
+
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
   margin-top: 2rem;
 }
@@ -989,6 +1028,40 @@ button {
   gap: 1.2rem;
 }
 
+.tooling-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(22rem, 1.35fr);
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.products-cards--tooling {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: minmax(12.8rem, 1fr);
+}
+
+.products-cards--tooling .tech-card {
+  min-height: 12.8rem;
+}
+
+.tooling-hero-card {
+  position: relative;
+  min-height: 28rem;
+  overflow: hidden;
+  background: #1c1c1c;
+  box-shadow: 0 1.4rem 3rem rgba(0, 0, 0, 0.22);
+}
+
+.tooling-hero-card__image {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(20, 20, 20, 0.18), rgba(20, 20, 20, 0.7)),
+    url("../assets/img/catalogo/01Herramental.jpeg") center/cover no-repeat;
+  opacity: 0.9;
+  transform: scale(1.01);
+}
+
 .tech-card {
   min-height: 18rem;
   padding: 1.5rem;
@@ -1013,29 +1086,29 @@ button {
 
 .tech-card--mechas-bg {
   background:
-    linear-gradient(180deg, rgba(20, 20, 20, 0.22), rgba(20, 20, 20, 0.48)),
-    url("../assets/img/catalogo/brocas/BrocaEscalonadaR.png") center 64%/cover no-repeat,
+    linear-gradient(180deg, rgba(43, 43, 43, 0.62), rgba(28, 28, 28, 0.74)),
+    url("../assets/img/catalogo/brocas/BrocaEscalonadaR.png") center 58%/cover no-repeat,
     #2b2b2b;
 }
 
 .tech-card--fresas-bg {
   background:
-    linear-gradient(180deg, rgba(20, 20, 20, 0.22), rgba(20, 20, 20, 0.48)),
-    url("../assets/img/catalogo/fresas/FresaIntegral.png?v=2") center 64%/cover no-repeat,
+    linear-gradient(180deg, rgba(43, 43, 43, 0.62), rgba(28, 28, 28, 0.74)),
+    url("../assets/img/catalogo/fresas/FresaIntegral.png?v=2") center 58%/cover no-repeat,
     #2b2b2b;
 }
 
 .tech-card--escariadores-bg {
   background:
-    linear-gradient(180deg, rgba(20, 20, 20, 0.34), rgba(20, 20, 20, 0.68)),
-    url("../assets/img/catalogo/escariadores/Escariador.png") center 64%/cover no-repeat,
+    linear-gradient(180deg, rgba(43, 43, 43, 0.62), rgba(28, 28, 28, 0.78)),
+    url("../assets/img/catalogo/escariadores/Escariador.png") center 58%/cover no-repeat,
     #2b2b2b;
 }
 
 .tech-card--insertos-bg {
   background:
-    linear-gradient(180deg, rgba(20, 20, 20, 0.34), rgba(20, 20, 20, 0.68)),
-    url("../assets/img/catalogo/insertos/Insertos.png?v=2") center 64%/cover no-repeat,
+    linear-gradient(180deg, rgba(43, 43, 43, 0.62), rgba(28, 28, 28, 0.78)),
+    url("../assets/img/catalogo/insertos/Insertos.png?v=2") center 58%/cover no-repeat,
     #2b2b2b;
 }
 
@@ -1070,7 +1143,7 @@ button {
 
 .tech-card__tag {
   display: inline-block;
-  margin-top: 3rem;
+  margin-top: 2rem;
   color: #d7ab36;
   font-size: 0.72rem;
   letter-spacing: 0.18em;
@@ -2395,7 +2468,7 @@ button {
 
 .portfolio-card--escariadores {
   background:
-    linear-gradient(180deg, rgba(24, 24, 24, 0.58), rgba(24, 24, 24, 0.64)),
+    linear-gradient(180deg, rgba(24, 24, 24, 0.28), rgba(24, 24, 24, 0.4)),
     url("../assets/img/escariadores.png") center/cover no-repeat;
 }
 
@@ -2433,52 +2506,195 @@ button {
 }
 
 .sectors {
-  padding: 5.5rem 0;
-}
-
-.sectors__grid {
-  display: grid;
-  grid-template-columns: minmax(18rem, 0.95fr) minmax(0, 1.1fr);
-  gap: 3rem;
-  align-items: center;
-}
-
-.sectors__image {
+  position: relative;
+  overflow: hidden;
   min-height: 30rem;
+  padding: 3.4rem 0;
+}
+
+.sectors::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-    url("../assets/img/oil&gas.png") center/cover no-repeat;
+    radial-gradient(circle at 50% 0%, rgba(196, 18, 18, 0.18), transparent 32%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 40%);
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.sectors > .container {
+  position: relative;
+}
+
+.sectors__intro {
+  display: grid;
+  justify-items: center;
+  min-height: 18rem;
+  align-content: center;
+  text-align: center;
+}
+
+.sectors__intro .section-title {
+  max-width: 11ch;
+}
+
+.sectors__hint {
+  margin-top: 1.25rem;
+  color: rgba(255, 255, 255, 0.34);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  transition: opacity 320ms ease, transform 320ms ease;
+}
+
+.sectors__reveal {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding-top: 0;
+  clip-path: inset(0 0 100% 0);
+  transform: translateY(1.2rem);
+  transition:
+    height 1200ms cubic-bezier(0.22, 1, 0.36, 1),
+    clip-path 1200ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 900ms ease,
+    padding-top 900ms ease,
+    transform 1000ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.sectors.is-expanded .sectors__hint {
+  opacity: 0;
+  transform: translateY(-0.5rem);
+}
+
+.sectors.is-expanded .sectors__reveal {
+  opacity: 1;
+  padding-top: 1rem;
+  clip-path: inset(0);
+  transform: translateY(0);
+}
+
+.sectors.is-expanded {
+  min-height: auto;
 }
 
 .sector-list {
   display: grid;
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.sector-item {
-  display: grid;
-  grid-template-columns: 2.5rem minmax(0, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
-  padding: 1.5rem 0;
-  border-top: 1px solid var(--color-line);
+  min-height: 0;
+  overflow: visible;
+  opacity: 0;
+  transform: translateY(-0.75rem);
+  transition: opacity 700ms ease 180ms, transform 900ms cubic-bezier(0.22, 1, 0.36, 1) 120ms;
 }
 
-.sector-item:last-child {
-  border-bottom: 1px solid var(--color-line);
+.sectors.is-expanded .sector-list {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sector-card {
+  position: relative;
+  display: grid;
+  align-content: end;
+  min-height: 18rem;
+  overflow: hidden;
+  padding: 1.4rem;
+  background: #202020;
+  isolation: isolate;
+  transform: translateY(2.4rem) scale(0.96);
+  opacity: 0;
+  filter: blur(10px);
+  transition:
+    transform 900ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 820ms ease,
+    filter 900ms ease,
+    box-shadow 220ms ease;
+}
+
+.sector-card.is-visible {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  filter: blur(0);
+}
+
+.sector-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background: var(--sector-image) center/cover no-repeat;
+  filter: grayscale(1);
+  opacity: 0.55;
+  transform: scale(1.04);
+  transition: opacity 220ms ease, transform 360ms ease;
+}
+
+.sector-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(12, 12, 12, 0.15), rgba(12, 12, 12, 0.84)),
+    linear-gradient(90deg, rgba(12, 12, 12, 0.5), rgba(12, 12, 12, 0.1));
+}
+
+.sector-card:hover {
+  box-shadow: 0 1.3rem 2.8rem rgba(0, 0, 0, 0.25);
+}
+
+.sector-card:hover::before {
+  opacity: 0.75;
+  transform: scale(1.08);
+}
+
+.sector-card--oil {
+  --sector-image: url("../assets/img/oil&gas.png");
+}
+
+.sector-card--auto {
+  --sector-image: url("../assets/img/precisionmicrometrica.png");
+}
+
+.sector-card--agro {
+  --sector-image: url("../assets/img/antridesgaste.png");
+}
+
+.sector-card--aero {
+  --sector-image: url("../assets/img/catalogo/01Herramental.jpeg");
+}
+
+.sector-card--wood {
+  --sector-image: url("../assets/img/fresas.jpeg");
+}
+
+.sector-card--ortho {
+  --sector-image: url("../assets/img/escariadores.png");
 }
 
 .sector-item__index {
+  display: inline-block;
+  margin-bottom: 0.85rem;
   color: #f4bf43;
   font-weight: 800;
 }
 
-.sector-item h3 {
+.sector-card h3 {
   margin: 0 0 0.45rem;
   font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.sector-card p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.65;
 }
 
 .cta-band {
@@ -2680,7 +2896,7 @@ button {
 }
 
 .site-footer {
-  padding: 4rem 0 1.5rem;
+  padding: 3rem 0 1.25rem;
   background: #111111;
   color: #fff;
 }
@@ -2689,10 +2905,17 @@ button {
   display: grid;
   grid-template-columns: minmax(0, 1.4fr) repeat(3, minmax(10rem, 1fr));
   gap: 2rem;
+  align-items: start;
+}
+
+.footer__text {
+  max-width: 18rem;
+  margin: 0;
+  line-height: 1.55;
 }
 
 .footer__title {
-  margin: 0 0 1rem;
+  margin: 0 0 0.85rem;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.18em;
@@ -2702,7 +2925,7 @@ button {
 
 .footer__list {
   display: grid;
-  gap: 0.8rem;
+  gap: 0.7rem;
 }
 
 .footer__list a,
@@ -2772,6 +2995,7 @@ button {
   .contact-presence__grid,
   .quality-control__grid,
   .quality-commitment__grid,
+  .tooling-grid,
   .oilgas-grid,
   .products-band__content,
   .contact-footer__grid,
@@ -2827,6 +3051,10 @@ button {
     display: none;
   }
 
+  .sector-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .intro__cards {
     max-width: 32rem;
   }
@@ -2835,7 +3063,7 @@ button {
     min-height: 28rem;
   }
 
-  .sectors__image {
+  .tooling-hero-card {
     min-height: 22rem;
   }
 
@@ -2981,6 +3209,23 @@ button {
   .catalog-modal__close {
     top: 0.7rem;
     right: 0.7rem;
+  }
+
+  .sectors {
+    min-height: 24rem;
+    padding: 3rem 0;
+  }
+
+  .sectors__intro {
+    min-height: 14rem;
+  }
+
+  .sector-list {
+    grid-template-columns: 1fr;
+  }
+
+  .sector-card {
+    min-height: 16rem;
   }
 
   .products-band h2 {
