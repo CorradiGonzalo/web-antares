@@ -1102,18 +1102,19 @@ body[data-page="home"] .navbar {
 
 .tooling-grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(22rem, 1.35fr);
+  grid-template-columns: minmax(0, 1.35fr) minmax(22rem, 0.95fr);
   gap: 1.5rem;
   align-items: stretch;
 }
 
 .products-cards--tooling {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-auto-rows: minmax(12.8rem, 1fr);
+  grid-auto-rows: auto;
 }
 
 .products-cards--tooling .tech-card {
-  min-height: 12.8rem;
+  min-height: 0;
+  aspect-ratio: 1 / 1;
 }
 
 .tooling-hero-card {
@@ -1258,6 +1259,14 @@ body[data-page="home"] .navbar {
   gap: 1.5rem;
 }
 
+.products-section--oilgas .oilgas-hero-card {
+  order: 2;
+}
+
+.products-section--oilgas .oilgas-stack {
+  order: 1;
+}
+
 .oilgas-hero-card {
   position: relative;
   min-height: 28rem;
@@ -1299,7 +1308,8 @@ body[data-page="home"] .navbar {
 
 .oilgas-stack {
   display: grid;
-  gap: 1.2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
 }
 
 .oilgas-stack__row {
@@ -3109,10 +3119,21 @@ body[data-page="home"] .navbar {
   .contact-form,
   .contact-details,
   .catalog-modal__grid,
+  .oilgas-stack,
   .oilgas-stack__row,
   .capacity-stack__row,
   .about-timeline {
     grid-template-columns: 1fr;
+  }
+
+  .products-section--oilgas .oilgas-hero-card,
+  .products-section--oilgas .oilgas-stack {
+    order: initial;
+  }
+
+  .products-cards--tooling .tech-card {
+    aspect-ratio: auto;
+    min-height: 12.8rem;
   }
 
   .about-footer__copy {
