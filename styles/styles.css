@@ -1795,7 +1795,7 @@ body[data-page="home"] .navbar {
   inset: 0;
   background:
     linear-gradient(180deg, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.6)),
-    url("https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80") center/cover no-repeat;
+    url("../assets/img/calidad/calidad.png?v=20260504-1223") center/cover no-repeat;
   filter: grayscale(1);
 }
 
