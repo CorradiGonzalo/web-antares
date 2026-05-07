@@ -92,7 +92,13 @@
           </p>
         </div>
 
-        <aside class="products-hero__cert">
+        <aside
+          class="products-hero__cert iso-certificate-trigger"
+          data-modal-open="iso-certificate-modal"
+          role="button"
+          tabindex="0"
+          aria-label="Ver certificado ISO 9001:2015"
+        >
           <p class="products-hero__cert-label" data-i18n="products.certLabel">Certificación</p>
           <p data-i18n="products.certText1">ISO 9001:2015</p>
           <p data-i18n="products.certText2">Estándar global</p>
@@ -724,6 +730,24 @@
           <article class="catalog-modal__card"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.maderaModal4Card2Title">Repuestos de guiado</h3></article>
           <article class="catalog-modal__card"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.maderaModal4Card3Title">Conjuntos técnicos</h3></article>
           <article class="catalog-modal__card"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.maderaModal4Card4Title">Partes especiales</h3></article>
+        </div>
+      </div>
+    </div>
+
+    <div class="catalog-modal catalog-modal--pdf" id="iso-certificate-modal" hidden aria-hidden="true">
+      <div class="catalog-modal__backdrop" data-modal-close></div>
+      <div class="catalog-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="iso-certificate-modal-title">
+        <button class="catalog-modal__close" type="button" aria-label="Cerrar" data-modal-close>X</button>
+        <div class="catalog-modal__header">
+          <span class="catalog-modal__eyebrow">Certificación</span>
+          <h2 class="catalog-modal__title" id="iso-certificate-modal-title">ISO 9001:2015</h2>
+        </div>
+        <div class="certificate-viewer">
+          <iframe
+            src="../assets/certificados/Certificados9001_2024.pdf#view=FitH"
+            title="Certificado ISO 9001:2015"
+            loading="lazy"
+          ></iframe>
         </div>
       </div>
     </div>

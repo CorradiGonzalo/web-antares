@@ -109,7 +109,13 @@
               <strong data-i18n="intro.metric1Value">66+</strong>
               <span data-i18n="intro.metric1Label">Años de experiencia</span>
             </article>
-            <article class="metric">
+            <article
+              class="metric iso-certificate-trigger"
+              data-modal-open="iso-certificate-modal"
+              role="button"
+              tabindex="0"
+              aria-label="Ver certificado ISO 9001:2015"
+            >
               <strong data-i18n="intro.metric2Value">ISO</strong>
               <span data-i18n="intro.metric2Label">Certificacion 9001</span>
             </article>
@@ -247,6 +253,24 @@
       </div>
     </section>
   </main>
+
+  <div class="catalog-modal catalog-modal--pdf" id="iso-certificate-modal" hidden aria-hidden="true">
+    <div class="catalog-modal__backdrop" data-modal-close></div>
+    <div class="catalog-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="iso-certificate-modal-title">
+      <button class="catalog-modal__close" type="button" aria-label="Cerrar" data-modal-close>X</button>
+      <div class="catalog-modal__header">
+        <span class="catalog-modal__eyebrow">Certificación</span>
+        <h2 class="catalog-modal__title" id="iso-certificate-modal-title">ISO 9001:2015</h2>
+      </div>
+      <div class="certificate-viewer">
+        <iframe
+          src="assets/certificados/Certificados9001_2024.pdf#view=FitH"
+          title="Certificado ISO 9001:2015"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </div>
 
   <footer class="site-footer">
     <div class="container footer__grid">
