@@ -2285,7 +2285,7 @@ body[data-page="home"] .navbar {
 
 .contact-presence__grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(18rem, 1fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 1rem;
 }
 
@@ -2791,11 +2791,11 @@ body[data-page="home"] .navbar {
 }
 
 .sector-card--oil {
-  --sector-image: url("../assets/img/oil&gas.png");
+  --sector-image: url("../assets/img/catalogo/02/ControlPresion.png");
 }
 
 .sector-card--auto {
-  --sector-image: url("../assets/img/precisionmicrometrica.png");
+  --sector-image: url("../assets/img/catalogo/01Herramental.jpeg");
 }
 
 .sector-card--agro {
@@ -2803,11 +2803,11 @@ body[data-page="home"] .navbar {
 }
 
 .sector-card--aero {
-  --sector-image: url("../assets/img/catalogo/01Herramental.jpeg");
+  --sector-image: url("../assets/img/fresas.jpeg");
 }
 
 .sector-card--wood {
-  --sector-image: url("../assets/img/fresas.jpeg");
+  --sector-image: url("../assets/img/siterizadodeprecision.png");
 }
 
 .sector-card--ortho {

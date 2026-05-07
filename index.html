@@ -205,7 +205,13 @@
               </div>
             </a>
 
-            <a class="sector-card sector-card--agro" href="pages/productosyservicios.html#sector-agropecuario" aria-label="Ir a la seccion Agropecuario en Productos y servicios">
+            <a
+              class="sector-card sector-card--agro"
+              href="pages/productosyservicios.html#sector-agropecuario"
+              aria-label="Catálogo de Agropecuario en proceso de carga"
+              data-modal-open="sector-unavailable-modal"
+              data-modal-prevent-nav="true"
+            >
               <span class="sector-item__index">03</span>
               <div>
                 <h3 data-i18n="sectors.item3Title">Agropecuario</h3>
@@ -213,7 +219,13 @@
               </div>
             </a>
 
-            <a class="sector-card sector-card--aero" href="pages/productosyservicios.html#sector-aeronautico" aria-label="Ir a la seccion Aeronautico en Productos y servicios">
+            <a
+              class="sector-card sector-card--aero"
+              href="pages/productosyservicios.html#sector-aeronautico"
+              aria-label="Catálogo de Aeronautico en proceso de carga"
+              data-modal-open="sector-unavailable-modal"
+              data-modal-prevent-nav="true"
+            >
               <span class="sector-item__index">04</span>
               <div>
                 <h3 data-i18n="sectors.item4Title">Aeronautico</h3>
@@ -221,7 +233,13 @@
               </div>
             </a>
 
-            <a class="sector-card sector-card--wood" href="pages/productosyservicios.html#sector-industria-maderera" aria-label="Ir a la seccion Industria maderera en Productos y servicios">
+            <a
+              class="sector-card sector-card--wood"
+              href="pages/productosyservicios.html#sector-industria-maderera"
+              aria-label="Catálogo de Industria maderera en proceso de carga"
+              data-modal-open="sector-unavailable-modal"
+              data-modal-prevent-nav="true"
+            >
               <span class="sector-item__index">05</span>
               <div>
                 <h3 data-i18n="sectors.item5Title">Industria maderera</h3>
@@ -269,6 +287,29 @@
           loading="lazy"
         ></iframe>
       </div>
+    </div>
+  </div>
+
+  <div class="catalog-modal" id="sector-unavailable-modal" hidden aria-hidden="true">
+    <div class="catalog-modal__backdrop" data-modal-close></div>
+    <div class="catalog-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="sector-unavailable-modal-title">
+      <button class="catalog-modal__close" type="button" aria-label="Cerrar" data-modal-close>X</button>
+      <div class="catalog-modal__header">
+        <span class="catalog-modal__eyebrow">Catalogo en actualizacion</span>
+        <h2 class="catalog-modal__title" id="sector-unavailable-modal-title">Sector aun no publicado</h2>
+        <p class="catalog-modal__lead">
+          Aun no esta subido al catalogo online el detalle de productos de este sector. Escribinos para confirmar si lo que necesitas ya esta disponible.
+        </p>
+      </div>
+      <div class="catalog-modal__grid">
+        <article class="catalog-modal__card">
+          <span class="catalog-modal__mark">><</span>
+          <h3>Atencion comercial y tecnica</h3>
+        </article>
+      </div>
+      <a class="button button--primary" href="https://wa.me/5493515198888?text=Hola%20Antares%2C%20quisiera%20consultar%20por%20productos%20de%20un%20sector%20que%20aun%20no%20figura%20en%20el%20catalogo." target="_blank" rel="noopener noreferrer">
+        Consultar disponibilidad
+      </a>
     </div>
   </div>
 
