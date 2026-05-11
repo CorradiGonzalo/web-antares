@@ -2325,11 +2325,17 @@ body[data-page="home"] .navbar {
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
+  min-width: 0;
   width: 100%;
   padding: 1rem 0.9rem;
   border: 1px solid rgba(0, 0, 0, 0.08);
   background: #fbf9f7;
   color: #313131;
+}
+
+.contact-form input[type="file"] {
+  max-width: 100%;
+  white-space: normal;
 }
 
 .contact-form textarea {
@@ -2367,14 +2373,16 @@ body[data-page="home"] .navbar {
   margin: 0;
   color: var(--color-text-muted);
   line-height: 1.8;
+  overflow-wrap: anywhere;
 }
 
 .contact-alert__phone {
   display: inline-block;
   margin-top: 1.5rem;
   font-family: "Kanit", sans-serif;
-  font-size: 2rem;
+  font-size: clamp(1.35rem, 6vw, 2rem);
   line-height: 1;
+  overflow-wrap: anywhere;
 }
 
 .contact-details {
@@ -2395,6 +2403,7 @@ body[data-page="home"] .navbar {
   margin: 0;
   color: var(--color-text-muted);
   line-height: 1.75;
+  overflow-wrap: anywhere;
 }
 
 .contact-presence {
@@ -3208,6 +3217,15 @@ body[data-page="home"] .navbar {
   align-items: start;
 }
 
+.footer__grid > *,
+.contact-main__grid > *,
+.contact-form__field,
+.contact-side,
+.contact-alert,
+.contact-detail {
+  min-width: 0;
+}
+
 .footer__text {
   max-width: 18rem;
   margin: 0;
@@ -3233,6 +3251,7 @@ body[data-page="home"] .navbar {
 .footer__text,
 .footer__bottom {
   color: rgba(255, 255, 255, 0.64);
+  overflow-wrap: anywhere;
 }
 
 .footer__list a:hover,
@@ -3565,6 +3584,47 @@ body[data-page="home"] .navbar {
 
   .contact-form__submit {
     min-width: 100%;
+  }
+
+  .contact-main {
+    padding: 2.8rem 0;
+  }
+
+  .contact-form {
+    gap: 1rem;
+  }
+
+  .contact-form__field span,
+  .contact-detail h3,
+  .footer__title {
+    letter-spacing: 0.1em;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    padding: 0.9rem 0.8rem;
+    font-size: 1rem;
+  }
+
+  .contact-alert,
+  .contact-detail {
+    padding-inline: 1.1rem;
+  }
+
+  .footer__grid {
+    gap: 1.6rem;
+  }
+
+  .footer__text {
+    max-width: none;
+  }
+
+  .footer__bottom {
+    line-height: 1.5;
+    letter-spacing: 0.08em;
   }
 
   .portfolio-card__content,
