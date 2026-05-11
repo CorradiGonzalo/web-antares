@@ -1279,7 +1279,7 @@ body[data-page="home"] .navbar {
   inset: 0;
   background:
     linear-gradient(180deg, rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.78)),
-    url("../assets/img/catalogo/02/ControlPresion.png") center/cover no-repeat;
+    url("../assets/img/oil&gas.png") center/cover no-repeat;
   opacity: 0.72;
 }
 
@@ -1346,6 +1346,27 @@ body[data-page="home"] .navbar {
 .oilgas-info--gold {
   background: #2e2916;
   border: 1px solid rgba(215, 171, 54, 0.24);
+}
+
+.oilgas-info--womoct {
+  background:
+    linear-gradient(180deg, rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.78)),
+    url("../assets/img/WOM&OCT.png") center/cover no-repeat,
+    #2b2b2b;
+}
+
+.oilgas-info--spm {
+  background:
+    linear-gradient(180deg, rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.78)),
+    url("../assets/img/catalogo/02/PistonFracturaSPM.png") center/cover no-repeat,
+    #2b2b2b;
+}
+
+.oilgas-info--exclusa {
+  background:
+    linear-gradient(180deg, rgba(20, 20, 20, 0.22), rgba(20, 20, 20, 0.48)),
+    url("../assets/img/catalogo/valvulas/exclusa.png") center/56% auto no-repeat,
+    #b8b8bd;
 }
 
 .oilgas-info h3 {
@@ -2897,7 +2918,7 @@ body[data-page="home"] .navbar {
 }
 
 .sector-card--oil {
-  --sector-image: url("../assets/img/catalogo/02/ControlPresion.png");
+  --sector-image: url("../assets/img/oil&gas.png");
 }
 
 .sector-card--auto {
