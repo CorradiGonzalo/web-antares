@@ -1718,6 +1718,13 @@ body[data-page="home"] .navbar {
     #2b2b2b;
 }
 
+.service-card--asistencia {
+  background:
+    linear-gradient(180deg, rgba(14, 14, 14, 0.45), rgba(14, 14, 14, 0.78)),
+    url("../assets/img/servicios/asiatencia.png") center/cover no-repeat,
+    #2b2b2b;
+}
+
 .service-card__eyebrow {
   display: inline-block;
   margin-bottom: 1rem;
