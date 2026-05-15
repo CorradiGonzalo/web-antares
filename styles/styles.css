@@ -2766,9 +2766,7 @@ body[data-page="home"] .navbar {
 }
 
 .portfolio-card--womoct {
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.4)),
-    url("../assets/img/WOM&OCT.png") center/cover no-repeat;
+  background: url("../assets/img/WOM&OCT-gray.png") center/cover no-repeat;
   color: #101a2b;
 }
 
