@@ -512,15 +512,15 @@ body[data-page="home"] .navbar {
 
 .hero__media {
   background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.35)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.18)),
     url("../assets/img/soluciones.png") center/cover no-repeat;
   transform: scale(1);
 }
 
 .hero__overlay {
   background:
-    radial-gradient(circle at 20% 30%, rgba(180, 91, 14, 0.3), transparent 26%),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.35) 55%, rgba(0, 0, 0, 0.82));
+    radial-gradient(circle at 20% 30%, rgba(180, 91, 14, 0.22), transparent 26%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.22) 55%, rgba(0, 0, 0, 0.6));
 }
 
 .hero__content {
@@ -601,8 +601,8 @@ body[data-page="home"] .navbar {
 
 .about-hero__overlay {
   background:
-    linear-gradient(90deg, rgba(10, 10, 10, 0.86) 0%, rgba(10, 10, 10, 0.62) 48%, rgba(10, 10, 10, 0.25) 100%),
-    linear-gradient(180deg, rgba(10, 10, 10, 0.08), rgba(10, 10, 10, 0.2));
+    linear-gradient(90deg, rgba(10, 10, 10, 0.62) 0%, rgba(10, 10, 10, 0.42) 48%, rgba(10, 10, 10, 0.16) 100%),
+    linear-gradient(180deg, rgba(10, 10, 10, 0.04), rgba(10, 10, 10, 0.12));
 }
 
 .about-hero__content {
@@ -706,19 +706,19 @@ body[data-page="home"] .navbar {
 
 .about-story__image--powder {
   background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)),
     url("../assets/img/HyN.png") center/cover no-repeat;
 }
 
 .about-story__image--machining {
   background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)),
     url("../assets/img/abuelo.png") center/cover no-repeat;
 }
 
 .about-story__image--landscape {
   background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),
     url("../assets/img/pampaolaen.png") center/cover no-repeat;
 }
 
@@ -789,7 +789,7 @@ body[data-page="home"] .navbar {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.74)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
     url("../assets/img/planta.png") center/cover no-repeat;
 }
 
@@ -1129,7 +1129,7 @@ body[data-page="home"] .navbar {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(20, 20, 20, 0.18), rgba(20, 20, 20, 0.7)),
+    linear-gradient(90deg, rgba(20, 20, 20, 0.1), rgba(20, 20, 20, 0.48)),
     url("../assets/img/catalogo/01Herramental.jpeg") center/cover no-repeat;
   opacity: 0.9;
   transform: scale(1.01);
@@ -1159,28 +1159,28 @@ body[data-page="home"] .navbar {
 
 .tech-card--mechas-bg {
   background:
-    linear-gradient(180deg, rgba(43, 43, 43, 0.62), rgba(28, 28, 28, 0.74)),
+    linear-gradient(180deg, rgba(43, 43, 43, 0.42), rgba(28, 28, 28, 0.54)),
     url("../assets/img/catalogo/brocas/BrocaEscalonadaR.png") center 58%/cover no-repeat,
     #2b2b2b;
 }
 
 .tech-card--fresas-bg {
   background:
-    linear-gradient(180deg, rgba(43, 43, 43, 0.62), rgba(28, 28, 28, 0.74)),
+    linear-gradient(180deg, rgba(43, 43, 43, 0.42), rgba(28, 28, 28, 0.54)),
     url("../assets/img/catalogo/fresas/FresaIntegral.png?v=2") center 58%/cover no-repeat,
     #2b2b2b;
 }
 
 .tech-card--escariadores-bg {
   background:
-    linear-gradient(180deg, rgba(43, 43, 43, 0.62), rgba(28, 28, 28, 0.78)),
+    linear-gradient(180deg, rgba(43, 43, 43, 0.42), rgba(28, 28, 28, 0.58)),
     url("../assets/img/catalogo/escariadores/Escariador.png") center 58%/cover no-repeat,
     #2b2b2b;
 }
 
 .tech-card--insertos-bg {
   background:
-    linear-gradient(180deg, rgba(43, 43, 43, 0.62), rgba(28, 28, 28, 0.78)),
+    linear-gradient(180deg, rgba(43, 43, 43, 0.42), rgba(28, 28, 28, 0.58)),
     url("../assets/img/catalogo/insertos/Insertos.png?v=2") center 58%/cover no-repeat,
     #2b2b2b;
 }
@@ -1278,9 +1278,9 @@ body[data-page="home"] .navbar {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.78)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.52)),
     url("../assets/img/oil&gas.png") center/cover no-repeat;
-  opacity: 0.72;
+  opacity: 0.9;
 }
 
 .oilgas-hero-card__content {
@@ -1350,21 +1350,21 @@ body[data-page="home"] .navbar {
 
 .oilgas-info--womoct {
   background:
-    linear-gradient(180deg, rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.78)),
+    linear-gradient(180deg, rgba(20, 20, 20, 0.35), rgba(20, 20, 20, 0.6)),
     url("../assets/img/WOM&OCT.png") center/cover no-repeat,
     #2b2b2b;
 }
 
 .oilgas-info--spm {
   background:
-    linear-gradient(180deg, rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.78)),
+    linear-gradient(180deg, rgba(20, 20, 20, 0.35), rgba(20, 20, 20, 0.6)),
     url("../assets/img/catalogo/02/PistonFracturaSPM.png") center/cover no-repeat,
     #2b2b2b;
 }
 
 .oilgas-info--exclusa {
   background:
-    linear-gradient(180deg, rgba(20, 20, 20, 0.22), rgba(20, 20, 20, 0.48)),
+    linear-gradient(180deg, rgba(20, 20, 20, 0.12), rgba(20, 20, 20, 0.3)),
     url("../assets/img/catalogo/valvulas/exclusa.png") center/56% auto no-repeat,
     #a4a4a8;
 }
@@ -1485,73 +1485,73 @@ body[data-page="home"] .navbar {
 
 .catalog-modal__card--spm-bg {
   background:
-    linear-gradient(180deg, rgba(20, 20, 20, 0.22), rgba(20, 20, 20, 0.48)),
+    linear-gradient(180deg, rgba(20, 20, 20, 0.12), rgba(20, 20, 20, 0.3)),
     url("../assets/img/catalogo/02/PistonFracturaSPM.png") center/cover no-repeat,
     #2b2b2b;
 }
 
 .catalog-modal__card--mecha-escalonada-bg {
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0.24), rgba(20, 20, 20, 0.62)), url("../assets/img/catalogo/brocas/BrocaEscalonadaR.png") center/112% 100% no-repeat, #2b2b2b;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.14), rgba(20, 20, 20, 0.42)), url("../assets/img/catalogo/brocas/BrocaEscalonadaR.png") center/112% 100% no-repeat, #2b2b2b;
 }
 
 .catalog-modal__card--mecha-helicoidal-bg {
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0.24), rgba(20, 20, 20, 0.62)), url("../assets/img/catalogo/brocas/mechaCor.png") center/cover no-repeat, #2b2b2b;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.14), rgba(20, 20, 20, 0.42)), url("../assets/img/catalogo/brocas/mechaCor.png") center/cover no-repeat, #2b2b2b;
 }
 
 .catalog-modal__card--mecha-recta-bg {
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0.24), rgba(20, 20, 20, 0.62)), url("../assets/img/catalogo/brocas/MechaCentro.png") center/112% 100% no-repeat, #2b2b2b;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.14), rgba(20, 20, 20, 0.42)), url("../assets/img/catalogo/brocas/MechaCentro.png") center/112% 100% no-repeat, #2b2b2b;
 }
 
 .catalog-modal__card--mecha-refrigerada-bg {
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0.24), rgba(20, 20, 20, 0.62)), url("../assets/img/catalogo/brocas/tresEscalones.png") center/cover no-repeat, #2b2b2b;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.14), rgba(20, 20, 20, 0.42)), url("../assets/img/catalogo/brocas/tresEscalones.png") center/cover no-repeat, #2b2b2b;
 }
 
 .catalog-modal__card--fresa-recta-bg {
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0.24), rgba(20, 20, 20, 0.62)), url("../assets/img/catalogo/fresas/FresaIntegral.png") center 50%/cover no-repeat, #2b2b2b;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.14), rgba(20, 20, 20, 0.42)), url("../assets/img/catalogo/fresas/FresaIntegral.png") center 50%/cover no-repeat, #2b2b2b;
 }
 
 .catalog-modal__card--fresa-esferica-bg {
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0.24), rgba(20, 20, 20, 0.62)), url("../assets/img/catalogo/fresas/Fresa.png") center/cover no-repeat, #2b2b2b;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.14), rgba(20, 20, 20, 0.42)), url("../assets/img/catalogo/fresas/Fresa.png") center/cover no-repeat, #2b2b2b;
 }
 
 .catalog-modal__card--fresa-desbaste-bg {
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0.24), rgba(20, 20, 20, 0.62)), url("../assets/img/catalogo/fresas/FresaRev.png") center/cover no-repeat, #2b2b2b;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.14), rgba(20, 20, 20, 0.42)), url("../assets/img/catalogo/fresas/FresaRev.png") center/cover no-repeat, #2b2b2b;
 }
 
 .catalog-modal__card--fresa-especial-bg {
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0.24), rgba(20, 20, 20, 0.62)), url("../assets/img/catalogo/fresas/fresaCircular.png") center/cover no-repeat, #2b2b2b;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.14), rgba(20, 20, 20, 0.42)), url("../assets/img/catalogo/fresas/fresaCircular.png") center/cover no-repeat, #2b2b2b;
 }
 
 .catalog-modal__card--escariador-1-bg {
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0.24), rgba(20, 20, 20, 0.62)), url("../assets/img/catalogo/escariadores/Escariador.png") center/cover no-repeat, #2b2b2b;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.14), rgba(20, 20, 20, 0.42)), url("../assets/img/catalogo/escariadores/Escariador.png") center/cover no-repeat, #2b2b2b;
 }
 
 .catalog-modal__card--escariador-2-bg {
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0.24), rgba(20, 20, 20, 0.62)), url("../assets/img/catalogo/escariadores/Escariador.png") 34% 65%/cover no-repeat, #2b2b2b;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.14), rgba(20, 20, 20, 0.42)), url("../assets/img/catalogo/escariadores/Escariador.png") 34% 65%/cover no-repeat, #2b2b2b;
 }
 
 .catalog-modal__card--escariador-3-bg {
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0.24), rgba(20, 20, 20, 0.62)), url("../assets/img/catalogo/escariadores/Escariador.png") 50% 65%/cover no-repeat, #2b2b2b;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.14), rgba(20, 20, 20, 0.42)), url("../assets/img/catalogo/escariadores/Escariador.png") 50% 65%/cover no-repeat, #2b2b2b;
 }
 
 .catalog-modal__card--escariador-4-bg {
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0.24), rgba(20, 20, 20, 0.62)), url("../assets/img/catalogo/escariadores/Escariador.png") 66% 65%/cover no-repeat, #2b2b2b;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.14), rgba(20, 20, 20, 0.42)), url("../assets/img/catalogo/escariadores/Escariador.png") 66% 65%/cover no-repeat, #2b2b2b;
 }
 
 .catalog-modal__card--inserto-triangular-bg {
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0.28), rgba(20, 20, 20, 0.66)), url("../assets/img/catalogo/insertos/Insertos.png") center/cover no-repeat, #2b2b2b;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.16), rgba(20, 20, 20, 0.46)), url("../assets/img/catalogo/insertos/Insertos.png") center/cover no-repeat, #2b2b2b;
 }
 
 .catalog-modal__card--inserto-rombico-bg {
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0.28), rgba(20, 20, 20, 0.66)), url("../assets/img/catalogo/insertos/Insertos.png") 36% 60%/cover no-repeat, #2b2b2b;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.16), rgba(20, 20, 20, 0.46)), url("../assets/img/catalogo/insertos/Insertos.png") 36% 60%/cover no-repeat, #2b2b2b;
 }
 
 .catalog-modal__card--inserto-fresado-bg {
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0.28), rgba(20, 20, 20, 0.66)), url("../assets/img/catalogo/insertos/Insertos.png") 50% 60%/cover no-repeat, #2b2b2b;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.16), rgba(20, 20, 20, 0.46)), url("../assets/img/catalogo/insertos/Insertos.png") 50% 60%/cover no-repeat, #2b2b2b;
 }
 
 .catalog-modal__card--inserto-rosca-bg {
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0.28), rgba(20, 20, 20, 0.66)), url("../assets/img/catalogo/insertos/Insertos.png") 64% 60%/cover no-repeat, #2b2b2b;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.16), rgba(20, 20, 20, 0.46)), url("../assets/img/catalogo/insertos/Insertos.png") 64% 60%/cover no-repeat, #2b2b2b;
 }
 
 .catalog-modal__card--wom-asientos-bg,
@@ -1576,19 +1576,19 @@ body[data-page="home"] .navbar {
 }
 
 .catalog-modal__card--wom-boquillas-bg {
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0.3), rgba(20, 20, 20, 0.68)), url("../assets/img/catalogo/orificios/tipoCameron.png") center/cover no-repeat, #2b2b2b;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.18), rgba(20, 20, 20, 0.48)), url("../assets/img/catalogo/orificios/tipoCameron.png") center/cover no-repeat, #2b2b2b;
 }
 
 .catalog-modal__card--wom-valvulas-bg {
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0.3), rgba(20, 20, 20, 0.68)), url("../assets/img/catalogo/orificios/orificio1.png") center/cover no-repeat, #2b2b2b;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.18), rgba(20, 20, 20, 0.48)), url("../assets/img/catalogo/orificios/orificio1.png") center/cover no-repeat, #2b2b2b;
 }
 
 .catalog-modal__card--wom-especiales-bg {
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0.3), rgba(20, 20, 20, 0.68)), url("../assets/img/catalogo/orificios/tipoOCT.png") center/cover no-repeat, #2b2b2b;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.18), rgba(20, 20, 20, 0.48)), url("../assets/img/catalogo/orificios/tipoOCT.png") center/cover no-repeat, #2b2b2b;
 }
 
 .catalog-modal__card--wom-asientos-bg {
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0.3), rgba(20, 20, 20, 0.68)), url("../assets/img/catalogo/orificios/tipoWom.png") center 58%/145% auto no-repeat, #2b2b2b;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.18), rgba(20, 20, 20, 0.48)), url("../assets/img/catalogo/orificios/tipoWom.png") center 58%/145% auto no-repeat, #2b2b2b;
 }
 
 .catalog-modal__card--spn-cuerpos-bg {
@@ -1706,21 +1706,21 @@ body[data-page="home"] .navbar {
 
 .service-card--reafilado {
   background:
-    linear-gradient(180deg, rgba(14, 14, 14, 0.45), rgba(14, 14, 14, 0.78)),
+    linear-gradient(180deg, rgba(14, 14, 14, 0.3), rgba(14, 14, 14, 0.58)),
     url("../assets/img/servicios/reafilado.jpeg") center/cover no-repeat,
     #2b2b2b;
 }
 
 .service-card--cph {
   background:
-    linear-gradient(180deg, rgba(14, 14, 14, 0.45), rgba(14, 14, 14, 0.78)),
+    linear-gradient(180deg, rgba(14, 14, 14, 0.3), rgba(14, 14, 14, 0.58)),
     url("../assets/img/servicios/cph.jpeg") center/cover no-repeat,
     #2b2b2b;
 }
 
 .service-card--asistencia {
   background:
-    linear-gradient(180deg, rgba(14, 14, 14, 0.45), rgba(14, 14, 14, 0.78)),
+    linear-gradient(180deg, rgba(14, 14, 14, 0.3), rgba(14, 14, 14, 0.58)),
     url("../assets/img/servicios/asiatencia.png") center/cover no-repeat,
     #2b2b2b;
 }
@@ -1991,7 +1991,7 @@ body[data-page="home"] .navbar {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.6)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.42)),
     url("../assets/img/calidad/calidad.png?v=20260504-1223") center/cover no-repeat;
   filter: grayscale(1);
 }
@@ -2475,13 +2475,13 @@ body[data-page="home"] .navbar {
 
 .presence-card__image--cordoba {
   background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.78)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.52)),
     url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80") center/cover no-repeat;
 }
 
 .presence-card__image--santacruz {
   background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.78)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.52)),
     url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80") center/cover no-repeat;
 }
 
@@ -2642,14 +2642,14 @@ body[data-page="home"] .navbar {
 
 .feature-card--image-bg {
   background:
-    linear-gradient(180deg, rgba(22, 22, 22, 0.34), rgba(22, 22, 22, 0.58)),
+    linear-gradient(180deg, rgba(22, 22, 22, 0.22), rgba(22, 22, 22, 0.42)),
     url("../assets/img/antridesgaste.png") center/cover no-repeat,
     #161616;
 }
 
 .feature-card--image-bg-precision {
   background:
-    linear-gradient(180deg, rgba(22, 22, 22, 0.34), rgba(22, 22, 22, 0.58)),
+    linear-gradient(180deg, rgba(22, 22, 22, 0.22), rgba(22, 22, 22, 0.42)),
     url("../assets/img/precisionmicrometrica.png") center/cover no-repeat,
     #161616;
 }
@@ -2713,7 +2713,7 @@ body[data-page="home"] .navbar {
 
 .portfolio-card__image--machining {
   background:
-    linear-gradient(180deg, transparent 35%, rgba(0, 0, 0, 0.8)),
+    linear-gradient(180deg, transparent 35%, rgba(0, 0, 0, 0.58)),
     url("../assets/img/fresas.jpeg") center/cover no-repeat;
 }
 
@@ -2757,7 +2757,7 @@ body[data-page="home"] .navbar {
 
 .portfolio-card--escariadores {
   background:
-    linear-gradient(180deg, rgba(24, 24, 24, 0.28), rgba(24, 24, 24, 0.4)),
+    linear-gradient(180deg, rgba(24, 24, 24, 0.16), rgba(24, 24, 24, 0.26)),
     url("../assets/img/escariadores.png") center/cover no-repeat;
 }
 
@@ -2919,7 +2919,7 @@ body[data-page="home"] .navbar {
   z-index: -2;
   background: var(--sector-image) center/cover no-repeat;
   filter: grayscale(1);
-  opacity: 0.55;
+  opacity: 0.68;
   transform: scale(1.04);
   transition: opacity 220ms ease, transform 360ms ease;
 }
@@ -2930,8 +2930,8 @@ body[data-page="home"] .navbar {
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(180deg, rgba(12, 12, 12, 0.15), rgba(12, 12, 12, 0.84)),
-    linear-gradient(90deg, rgba(12, 12, 12, 0.5), rgba(12, 12, 12, 0.1));
+    linear-gradient(180deg, rgba(12, 12, 12, 0.08), rgba(12, 12, 12, 0.64)),
+    linear-gradient(90deg, rgba(12, 12, 12, 0.32), rgba(12, 12, 12, 0.06));
 }
 
 .sector-card:hover {
