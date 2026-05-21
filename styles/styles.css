@@ -1359,13 +1359,15 @@ body[data-page="home"] .navbar {
   background:
     linear-gradient(180deg, rgba(20, 20, 20, 0.25), rgba(20, 20, 20, 0.5)),
     url("../assets/img/catalogo/02/PistonFracturaSPM.png") center/cover no-repeat,
-    #2b2b2b;
+
+    linear-gradient(180deg, rgba(20, 20, 20, 0.35), rgba(20, 20, 20, 0.6)),
+    url("../assets/img/catalogo/02/PistonFracturaSPM.png?v=20260521") center/cover no-repeat, #2b2b2b;
 }
 
 .oilgas-info--exclusa {
   background:
     linear-gradient(180deg, rgba(20, 20, 20, 0.12), rgba(20, 20, 20, 0.3)),
-    url("../assets/img/catalogo/valvulas/exclusa.png") center/56% auto no-repeat,
+    url("../assets/img/catalogo/valvulas/exclusa.png?v=20260521") center/56% auto no-repeat,
     #a4a4a8;
 }
 
@@ -1485,9 +1487,12 @@ body[data-page="home"] .navbar {
 
 .catalog-modal__card--spm-bg {
   background:
+
     linear-gradient(180deg, rgba(20, 20, 20, 0.08), rgba(20, 20, 20, 0.22)),
     url("../assets/img/catalogo/02/PistonFracturaSPM.png") center/cover no-repeat,
-    #2b2b2b;
+
+    linear-gradient(180deg, rgba(20, 20, 20, 0.12), rgba(20, 20, 20, 0.3)),
+    url("../assets/img/catalogo/02/PistonFracturaSPM.png?v=20260521") center/cover no-repeat, #2b2b2b;
 }
 
 .catalog-modal__card--mecha-escalonada-bg {
@@ -1495,6 +1500,7 @@ body[data-page="home"] .navbar {
 }
 
 .catalog-modal__card--mecha-helicoidal-bg {
+
   background: linear-gradient(180deg, rgba(20, 20, 20, 0.1), rgba(20, 20, 20, 0.32)), url("../assets/img/catalogo/brocas/mechaCor.png") center/cover no-repeat, #2b2b2b;
 }
 
@@ -1504,6 +1510,15 @@ body[data-page="home"] .navbar {
 
 .catalog-modal__card--mecha-refrigerada-bg {
   background: linear-gradient(180deg, rgba(20, 20, 20, 0.1), rgba(20, 20, 20, 0.32)), url("../assets/img/catalogo/brocas/tresEscalones.png") center/cover no-repeat, #2b2b2b;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.14), rgba(20, 20, 20, 0.42)), url("../assets/img/catalogo/brocas/mechaCor.png?v=20260521") center/cover no-repeat, #2b2b2b;
+}
+
+.catalog-modal__card--mecha-recta-bg {
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.14), rgba(20, 20, 20, 0.42)), url("../assets/img/catalogo/brocas/MechaCentro.png?v=20260521") center/112% 100% no-repeat, #2b2b2b;
+}
+
+.catalog-modal__card--mecha-refrigerada-bg {
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.14), rgba(20, 20, 20, 0.42)), url("../assets/img/catalogo/brocas/tresEscalones.png?v=20260521") center/cover no-repeat, #2b2b2b;
 }
 
 .catalog-modal__card--fresa-recta-bg {
@@ -1511,6 +1526,7 @@ body[data-page="home"] .navbar {
 }
 
 .catalog-modal__card--fresa-esferica-bg {
+
   background: linear-gradient(180deg, rgba(20, 20, 20, 0.1), rgba(20, 20, 20, 0.32)), url("../assets/img/catalogo/fresas/Fresa.png") center/cover no-repeat, #2b2b2b;
 }
 
@@ -1520,6 +1536,17 @@ body[data-page="home"] .navbar {
 
 .catalog-modal__card--fresa-especial-bg {
   background: linear-gradient(180deg, rgba(20, 20, 20, 0.1), rgba(20, 20, 20, 0.32)), url("../assets/img/catalogo/fresas/fresaCircular.png") center/cover no-repeat, #2b2b2b;
+
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.14), rgba(20, 20, 20, 0.42)), url("../assets/img/catalogo/fresas/Fresa.png?v=20260521") center/cover no-repeat, #2b2b2b;
+}
+
+.catalog-modal__card--fresa-desbaste-bg {
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.14), rgba(20, 20, 20, 0.42)), url("../assets/img/catalogo/fresas/FresaRev.png?v=20260521") center/cover no-repeat, #2b2b2b;
+}
+
+.catalog-modal__card--fresa-especial-bg {
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.14), rgba(20, 20, 20, 0.42)), url("../assets/img/catalogo/fresas/fresaCircular.png?v=20260521") center/cover no-repeat, #2b2b2b;
+
 }
 
 .catalog-modal__card--escariador-1-bg {
@@ -1589,6 +1616,19 @@ body[data-page="home"] .navbar {
 
 .catalog-modal__card--wom-asientos-bg {
   background: linear-gradient(180deg, rgba(20, 20, 20, 0.12), rgba(20, 20, 20, 0.38)), url("../assets/img/catalogo/orificios/tipoWom.png") center 58%/145% auto no-repeat, #2b2b2b;
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.18), rgba(20, 20, 20, 0.48)), url("../assets/img/catalogo/orificios/tipoCameron.png?v=20260521") center/cover no-repeat, #2b2b2b;
+}
+
+.catalog-modal__card--wom-valvulas-bg {
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.18), rgba(20, 20, 20, 0.48)), url("../assets/img/catalogo/orificios/orificio1.png?v=20260521") center/cover no-repeat, #2b2b2b;
+}
+
+.catalog-modal__card--wom-especiales-bg {
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.18), rgba(20, 20, 20, 0.48)), url("../assets/img/catalogo/orificios/tipoOCT.png?v=20260521") center/cover no-repeat, #2b2b2b;
+}
+
+.catalog-modal__card--wom-asientos-bg {
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.18), rgba(20, 20, 20, 0.48)), url("../assets/img/catalogo/orificios/tipoWom.png?v=20260521") center 58%/145% auto no-repeat, #2b2b2b;
 }
 
 .catalog-modal__card--spn-cuerpos-bg {
