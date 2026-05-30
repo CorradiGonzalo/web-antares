@@ -38,6 +38,40 @@ const translations = {
   }
 };
 
+Object.assign(translations.es.products, {
+  section6Title: "06. Otros Productos",
+  section7Title: "07. Área de servicios",
+  siderurgiaHeroAria: "Aplicaciones para siderurgia",
+  siderurgiaCard1Title: "Enderezadores de alambre",
+  siderurgiaCard1Tag: "Ver línea alambre",
+  siderurgiaCard2Title: "Cuchilla circular",
+  siderurgiaCard2Tag: "Ver cuchilla circular",
+  siderurgiaModalEyebrow: "Catálogo técnico",
+  siderurgiaModal1Title: "Línea enderezadores de alambre",
+  siderurgiaModal1Lead: "Componentes resistentes al desgaste para guiado y conformado de alambre en líneas siderúrgicas.",
+  siderurgiaModal1Card1: "Enderezadora de alambre",
+  siderurgiaModal2Title: "Cuchilla circular",
+  siderurgiaModal2Lead: "Cuchilla circular para aplicaciones industriales de corte continuo.",
+  siderurgiaModal2Card1: "Cuchilla circular"
+});
+
+Object.assign(translations.en.products, {
+  section6Title: "06. Other Products",
+  section7Title: "07. Service area",
+  siderurgiaHeroAria: "Steel industry applications",
+  siderurgiaCard1Title: "Wire straighteners",
+  siderurgiaCard1Tag: "View wire tooling line",
+  siderurgiaCard2Title: "Circular blade",
+  siderurgiaCard2Tag: "View circular blade",
+  siderurgiaModalEyebrow: "Technical catalog",
+  siderurgiaModal1Title: "Wire straighteners line",
+  siderurgiaModal1Lead: "Wear-resistant components for wire guiding and forming in steel production lines.",
+  siderurgiaModal1Card1: "Wire straightener",
+  siderurgiaModal2Title: "Circular blade",
+  siderurgiaModal2Lead: "Circular blade for continuous industrial cutting applications.",
+  siderurgiaModal2Card1: "Circular blade"
+});
+
 const defaultLanguage = "es";
 const menuToggle = document.querySelector(".menu-toggle");
 const mobileMenu = document.querySelector(".mobile-menu");

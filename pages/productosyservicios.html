@@ -387,11 +387,38 @@
     </section>
 
     -->
+    <section class="products-section section-dark" id="sector-siderurgia">
+      <div class="container">
+        <div class="products-heading">
+          <span class="products-heading__line"></span>
+          <h2 data-i18n="products.section6Title">06. Otros Productos</h2>
+        </div>
+
+        <div class="tooling-grid">
+          <div class="products-cards products-cards--tooling products-cards--other-products">
+            <button class="tech-card tech-card--trigger tech-card--siderurgia-rodillos" type="button" data-modal-open="siderurgia-rodillos-modal">
+              <div class="tech-card__top"><span class="tech-card__icon">><</span></div>
+              <h3 data-i18n="products.siderurgiaCard1Title">Enderezadores de alambre</h3>
+              <span class="tech-card__tag" data-i18n="products.siderurgiaCard1Tag">VER LINEA ALAMBRE</span>
+            </button>
+            <button class="tech-card tech-card--trigger tech-card--siderurgia-cuchilla" type="button" data-modal-open="siderurgia-cuchilla-modal">
+              <div class="tech-card__top"><span class="tech-card__icon">><</span></div>
+              <h3 data-i18n="products.siderurgiaCard2Title">Cuchilla circular</h3>
+              <span class="tech-card__tag" data-i18n="products.siderurgiaCard2Tag">VER CUCHILLA CIRCULAR</span>
+            </button>
+          </div>
+          <article class="tooling-hero-card" aria-label="Aplicaciones para siderurgia" data-i18n-aria-label="products.siderurgiaHeroAria">
+            <div class="tooling-hero-card__image tooling-hero-card__image--siderurgia" aria-hidden="true"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="products-section section-dark products-section--services" id="sector-servicios">
       <div class="container">
         <div class="products-heading">
           <span class="products-heading__line"></span>
-          <h2 data-i18n="products.section6Title">06. Area de servicios</h2>
+          <h2 data-i18n="products.section7Title">07. Área de servicios</h2>
         </div>
 
         <div class="services-grid">
@@ -426,6 +453,36 @@
         </div>
       </div>
     </section>
+
+    <div class="catalog-modal" id="siderurgia-rodillos-modal" hidden aria-hidden="true">
+      <div class="catalog-modal__backdrop" data-modal-close></div>
+      <div class="catalog-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="siderurgia-rodillos-modal-title">
+        <button class="catalog-modal__close" type="button" aria-label="Cerrar" data-modal-close>X</button>
+        <div class="catalog-modal__header">
+          <span class="catalog-modal__eyebrow" data-i18n="products.siderurgiaModalEyebrow">Catálogo técnico</span>
+          <h2 class="catalog-modal__title" id="siderurgia-rodillos-modal-title" data-i18n="products.siderurgiaModal1Title">Línea enderezadores de alambre</h2>
+          <p class="catalog-modal__lead" data-i18n="products.siderurgiaModal1Lead">Componentes resistentes al desgaste para guiado y conformado de alambre en líneas siderúrgicas.</p>
+        </div>
+        <div class="catalog-modal__grid catalog-modal__grid--single">
+          <article class="catalog-modal__card catalog-modal__card--siderurgia-enderezadora"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.siderurgiaModal1Card1">Enderezadora de alambre</h3></article>
+        </div>
+      </div>
+    </div>
+
+    <div class="catalog-modal" id="siderurgia-cuchilla-modal" hidden aria-hidden="true">
+      <div class="catalog-modal__backdrop" data-modal-close></div>
+      <div class="catalog-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="siderurgia-cuchilla-modal-title">
+        <button class="catalog-modal__close" type="button" aria-label="Cerrar" data-modal-close>X</button>
+        <div class="catalog-modal__header">
+          <span class="catalog-modal__eyebrow" data-i18n="products.siderurgiaModalEyebrow">Catálogo técnico</span>
+          <h2 class="catalog-modal__title" id="siderurgia-cuchilla-modal-title" data-i18n="products.siderurgiaModal2Title">Cuchilla circular</h2>
+          <p class="catalog-modal__lead" data-i18n="products.siderurgiaModal2Lead">Cuchilla circular para aplicaciones industriales de corte continuo.</p>
+        </div>
+        <div class="catalog-modal__grid catalog-modal__grid--single">
+          <article class="catalog-modal__card catalog-modal__card--siderurgia-cuchilla"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.siderurgiaModal2Card1">Cuchilla circular</h3></article>
+        </div>
+      </div>
+    </div>
 
     <div class="catalog-modal" id="wom-oct-modal" hidden aria-hidden="true">
       <div class="catalog-modal__backdrop" data-modal-close></div>
