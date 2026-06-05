@@ -106,6 +106,50 @@
       </div>
     </section>
 
+    <section class="products-section section-dark products-section--sintered" id="sector-productos-sinterizados">
+      <div class="container">
+        <div class="products-heading">
+          <span class="products-heading__line"></span>
+          <h2 data-i18n="products.section0Title">00. Productos Sinterizados</h2>
+        </div>
+
+        <div class="sintered-grid">
+          <article class="sintered-hero-card" aria-label="Productos sinterizados en bruto" data-i18n-aria-label="products.sinteredHeroAria">
+            <div class="sintered-hero-card__image" aria-hidden="true"></div>
+            <div class="sintered-hero-card__content">
+              <h3 data-i18n="products.sinteredHeroTitle">Productos sinterizados en bruto</h3>
+            </div>
+          </article>
+
+          <div class="products-cards products-cards--tooling">
+            <button class="tech-card tech-card--trigger tech-card--sintered-1" type="button" data-modal-open="sinterizados-bruto-modal">
+              <div class="tech-card__top"><span class="tech-card__icon">><</span></div>
+              <h3 data-i18n="products.sinteredCard1Title">Barras</h3>
+              <span class="tech-card__tag" data-i18n="products.sinteredCard1Tag">VER LINEA SINTERIZADOS</span>
+            </button>
+
+            <button class="tech-card tech-card--trigger tech-card--sintered-2" type="button" data-modal-open="sinterizados-bujes-modal">
+              <div class="tech-card__top"><span class="tech-card__icon">><</span></div>
+              <h3 data-i18n="products.sinteredCard2Title">Insertos en bruto</h3>
+              <span class="tech-card__tag" data-i18n="products.sinteredCard2Tag">VER LINEA INSERTOS</span>
+            </button>
+
+            <button class="tech-card tech-card--trigger tech-card--sintered-3" type="button" data-modal-open="sinterizados-preformas-modal">
+              <div class="tech-card__top"><span class="tech-card__icon">><</span></div>
+              <h3 data-i18n="products.sinteredCard3Title">Bujes en bruto</h3>
+              <span class="tech-card__tag" data-i18n="products.sinteredCard3Tag">VER LINEA BUJES</span>
+            </button>
+
+            <button class="tech-card tech-card--trigger tech-card--sintered-4" type="button" data-modal-open="sinterizados-especiales-modal">
+              <div class="tech-card__top"><span class="tech-card__icon">><</span></div>
+              <h3 data-i18n="products.sinteredCard4Title">Especiales</h3>
+              <span class="tech-card__tag" data-i18n="products.sinteredCard4Tag">VER LINEA ESPECIAL</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="products-section section-dark products-section--oilgas" id="sector-oil-gas">
       <div class="container">
         <div class="products-heading">
@@ -151,6 +195,66 @@
         </div>
       </div>
     </section>
+
+    <div class="catalog-modal" id="sinterizados-bruto-modal" hidden aria-hidden="true">
+      <div class="catalog-modal__backdrop" data-modal-close></div>
+      <div class="catalog-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="sinterizados-bruto-modal-title">
+        <button class="catalog-modal__close" type="button" aria-label="Cerrar" data-modal-close>X</button>
+        <div class="catalog-modal__header">
+          <span class="catalog-modal__eyebrow" data-i18n="products.sinteredModalEyebrow">Catálogo técnico</span>
+          <h2 class="catalog-modal__title" id="sinterizados-bruto-modal-title" data-i18n="products.sinteredModal1Title">Barras</h2>
+          <p class="catalog-modal__lead" data-i18n="products.sinteredModal1Lead">Barras sinterizadas en bruto para mecanizado y desarrollo de piezas especiales.</p>
+        </div>
+        <div class="catalog-modal__grid catalog-modal__grid--single">
+          <article class="catalog-modal__card catalog-modal__card--barras"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.sinteredModal1Card1">Barras</h3></article>
+        </div>
+      </div>
+    </div>
+
+    <div class="catalog-modal" id="sinterizados-bujes-modal" hidden aria-hidden="true">
+      <div class="catalog-modal__backdrop" data-modal-close></div>
+      <div class="catalog-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="sinterizados-bujes-modal-title">
+        <button class="catalog-modal__close" type="button" aria-label="Cerrar" data-modal-close>X</button>
+        <div class="catalog-modal__header">
+          <span class="catalog-modal__eyebrow" data-i18n="products.sinteredModalEyebrow">Catálogo técnico</span>
+          <h2 class="catalog-modal__title" id="sinterizados-bujes-modal-title" data-i18n="products.sinteredModal2Title">Insertos en bruto</h2>
+          <p class="catalog-modal__lead" data-i18n="products.sinteredModal2Lead">Insertos sinterizados en bruto para mecanizado, terminación y ajuste de geometría.</p>
+        </div>
+        <div class="catalog-modal__grid catalog-modal__grid--single">
+          <article class="catalog-modal__card catalog-modal__card--insertos-bruto"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.sinteredModal2Card1">Insertos en bruto</h3></article>
+        </div>
+      </div>
+    </div>
+
+    <div class="catalog-modal" id="sinterizados-preformas-modal" hidden aria-hidden="true">
+      <div class="catalog-modal__backdrop" data-modal-close></div>
+      <div class="catalog-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="sinterizados-preformas-modal-title">
+        <button class="catalog-modal__close" type="button" aria-label="Cerrar" data-modal-close>X</button>
+        <div class="catalog-modal__header">
+          <span class="catalog-modal__eyebrow" data-i18n="products.sinteredModalEyebrow">Catálogo técnico</span>
+          <h2 class="catalog-modal__title" id="sinterizados-preformas-modal-title" data-i18n="products.sinteredModal3Title">Bujes en bruto</h2>
+          <p class="catalog-modal__lead" data-i18n="products.sinteredModal3Lead">Bujes sinterizados en bruto para mecanizado posterior y ajuste dimensional.</p>
+        </div>
+        <div class="catalog-modal__grid catalog-modal__grid--single">
+          <article class="catalog-modal__card catalog-modal__card--bujes-bruto"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.sinteredModal3Card1">Bujes en bruto</h3></article>
+        </div>
+      </div>
+    </div>
+
+    <div class="catalog-modal" id="sinterizados-especiales-modal" hidden aria-hidden="true">
+      <div class="catalog-modal__backdrop" data-modal-close></div>
+      <div class="catalog-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="sinterizados-especiales-modal-title">
+        <button class="catalog-modal__close" type="button" aria-label="Cerrar" data-modal-close>X</button>
+        <div class="catalog-modal__header">
+          <span class="catalog-modal__eyebrow" data-i18n="products.sinteredModalEyebrow">Catálogo técnico</span>
+          <h2 class="catalog-modal__title" id="sinterizados-especiales-modal-title" data-i18n="products.sinteredModal4Title">Especiales</h2>
+          <p class="catalog-modal__lead" data-i18n="products.sinteredModalLead">Catálogo en preparación para productos sinterizados.</p>
+        </div>
+        <div class="catalog-modal__grid catalog-modal__grid--single">
+          <article class="catalog-modal__card catalog-modal__card--placeholder"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.sinteredModalPlaceholder">Próximamente</h3></article>
+        </div>
+      </div>
+    </div>
 
     <div class="catalog-modal" id="mechas-modal" hidden aria-hidden="true">
       <div class="catalog-modal__backdrop" data-modal-close></div>
@@ -406,6 +510,16 @@
               <h3 data-i18n="products.siderurgiaCard2Title">Cuchilla circular</h3>
               <span class="tech-card__tag" data-i18n="products.siderurgiaCard2Tag">VER CUCHILLA CIRCULAR</span>
             </button>
+            <button class="tech-card tech-card--trigger tech-card--siderurgia-sellos" type="button" data-modal-open="siderurgia-sellos-modal">
+              <div class="tech-card__top"><span class="tech-card__icon">><</span></div>
+              <h3 data-i18n="products.siderurgiaCard3Title">Sellos</h3>
+              <span class="tech-card__tag" data-i18n="products.siderurgiaCard3Tag">VER LINEA SELLOS</span>
+            </button>
+            <button class="tech-card tech-card--trigger tech-card--siderurgia-anillos" type="button" data-modal-open="siderurgia-anillos-modal">
+              <div class="tech-card__top"><span class="tech-card__icon">><</span></div>
+              <h3 data-i18n="products.siderurgiaCard4Title">Anillos</h3>
+              <span class="tech-card__tag" data-i18n="products.siderurgiaCard4Tag">VER LINEA ANILLOS</span>
+            </button>
           </div>
           <article class="tooling-hero-card" aria-label="Aplicaciones para siderurgia" data-i18n-aria-label="products.siderurgiaHeroAria">
             <div class="tooling-hero-card__image tooling-hero-card__image--siderurgia" aria-hidden="true"></div>
@@ -480,6 +594,36 @@
         </div>
         <div class="catalog-modal__grid catalog-modal__grid--single">
           <article class="catalog-modal__card catalog-modal__card--siderurgia-cuchilla"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.siderurgiaModal2Card1">Cuchilla circular</h3></article>
+        </div>
+      </div>
+    </div>
+
+    <div class="catalog-modal" id="siderurgia-sellos-modal" hidden aria-hidden="true">
+      <div class="catalog-modal__backdrop" data-modal-close></div>
+      <div class="catalog-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="siderurgia-sellos-modal-title">
+        <button class="catalog-modal__close" type="button" aria-label="Cerrar" data-modal-close>X</button>
+        <div class="catalog-modal__header">
+          <span class="catalog-modal__eyebrow" data-i18n="products.siderurgiaModalEyebrow">CatÃ¡logo tÃ©cnico</span>
+          <h2 class="catalog-modal__title" id="siderurgia-sellos-modal-title" data-i18n="products.siderurgiaModal3Title">Sellos</h2>
+          <p class="catalog-modal__lead" data-i18n="products.siderurgiaModal3Lead">Componentes de sellado para aplicaciones industriales de alta exigencia.</p>
+        </div>
+        <div class="catalog-modal__grid catalog-modal__grid--single">
+          <article class="catalog-modal__card catalog-modal__card--siderurgia-sellos"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.siderurgiaModal3Card1">Sellos</h3></article>
+        </div>
+      </div>
+    </div>
+
+    <div class="catalog-modal" id="siderurgia-anillos-modal" hidden aria-hidden="true">
+      <div class="catalog-modal__backdrop" data-modal-close></div>
+      <div class="catalog-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="siderurgia-anillos-modal-title">
+        <button class="catalog-modal__close" type="button" aria-label="Cerrar" data-modal-close>X</button>
+        <div class="catalog-modal__header">
+          <span class="catalog-modal__eyebrow" data-i18n="products.siderurgiaModalEyebrow">CatÃ¡logo tÃ©cnico</span>
+          <h2 class="catalog-modal__title" id="siderurgia-anillos-modal-title" data-i18n="products.siderurgiaModal4Title">Anillos</h2>
+          <p class="catalog-modal__lead" data-i18n="products.siderurgiaModal4Lead">Anillos y bujes para aplicaciones industriales con resistencia al desgaste.</p>
+        </div>
+        <div class="catalog-modal__grid catalog-modal__grid--single">
+          <article class="catalog-modal__card catalog-modal__card--siderurgia-anillos"><span class="catalog-modal__mark">><</span><h3 data-i18n="products.siderurgiaModal4Card1">Anillos</h3></article>
         </div>
       </div>
     </div>
@@ -821,7 +965,7 @@
           <p data-i18n="products.bandText">"La precisión no es una opción, es nuestro estándar de fabricación."</p>
         </div>
         <div class="products-band__cta">
-          <a class="button button--light" href="https://wa.me/5493515198888?text=Hola%20Antares%2C%20quisiera%20hacer%20una%20consulta." target="_blank" rel="noopener noreferrer" data-i18n="products.bandButton">Contactar</a>
+          <a class="button button--light" href="mailto:info@antaressrl.com.ar?subject=Consulta%20desde%20web%20Antares&body=Hola%20Antares%2C%20quisiera%20hacer%20una%20consulta." data-i18n="products.bandButton">Contactar</a>
           <span data-i18n="products.bandNote">Respuesta técnica en menos de 24hs</span>
         </div>
       </div>
@@ -868,7 +1012,7 @@
     </div>
   </footer>
 
-  <a class="whatsapp-fab" href="https://wa.me/5493515198888?text=Hola%20Antares%2C%20quisiera%20hacer%20una%20consulta." target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp" title="WhatsApp">WA</a>
+  <a class="whatsapp-fab" href="mailto:info@antaressrl.com.ar?subject=Consulta%20desde%20web%20Antares&body=Hola%20Antares%2C%20quisiera%20hacer%20una%20consulta." aria-label="Enviar correo a Antares" title="Email">MAIL</a>
 
   <script src="../script/script.js" defer></script>
 </body>
