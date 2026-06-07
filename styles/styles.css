@@ -243,7 +243,7 @@ body[data-page="home"] .navbar {
 
 .brand img {
   display: block;
-  height: 2.51rem;
+  height: 7.54rem;
   width: auto;
 }
 
@@ -254,7 +254,7 @@ body[data-page="home"] .navbar {
 }
 
 .brand--footer img {
-  height: 2.15rem;
+  height: 3.36rem;
 }
 
 .nav-desktop {
@@ -512,15 +512,15 @@ body[data-page="home"] .navbar {
 
 .hero__media {
   background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.12)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.28)),
     url("../assets/img/soluciones.png") center/cover no-repeat;
   transform: scale(1);
 }
 
 .hero__overlay {
   background:
-    radial-gradient(circle at 20% 30%, rgba(180, 91, 14, 0.18), transparent 26%),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.16) 55%, rgba(0, 0, 0, 0.48));
+    radial-gradient(circle at 20% 30%, rgba(180, 91, 14, 0.12), transparent 26%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.24) 55%, rgba(0, 0, 0, 0.58));
 }
 
 .hero__content {
@@ -563,10 +563,11 @@ body[data-page="home"] .navbar {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: min(30rem, 78vw);
+  width: min(38rem, 86vw);
   margin-top: -0.25rem;
-  padding: 0 clamp(1rem, 3vw, 2rem) clamp(1rem, 3vw, 2rem);
+  padding: 0 clamp(0.5rem, 2vw, 1rem) 0.35rem;
   filter: drop-shadow(0 1.25rem 2rem rgba(0, 0, 0, 0.48));
+  pointer-events: none;
 }
 
 .hero__brand-mark img {
@@ -575,11 +576,22 @@ body[data-page="home"] .navbar {
 }
 
 .hero__actions {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: -6.65rem;
+}
+
+.hero__actions .button {
+  min-width: 13.5rem;
+  min-height: 0;
+  height: 2.15rem;
+  padding: 0 1.45rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.13em;
 }
 
 .about-hero {
@@ -1597,20 +1609,25 @@ body[data-page="home"] .navbar {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-auto-flow: row;
-  grid-auto-rows: minmax(15rem, auto);
+  grid-auto-rows: auto;
   align-content: start;
   align-items: stretch;
   gap: 1.2rem;
 }
 
 .catalog-modal__grid--single {
-  grid-template-columns: minmax(0, 32rem);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .catalog-modal__card {
-  min-height: 15rem;
-  height: 15rem;
+  display: flex;
+  aspect-ratio: 1 / 1;
+  min-height: 0;
+  height: auto;
   padding: 1.5rem;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
   background: #2b2b2b;
   border: 1px solid rgba(255, 255, 255, 0.05);
   box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.16);
@@ -1631,6 +1648,27 @@ body[data-page="home"] .navbar {
     #d8d8d8;
 }
 
+.catalog-modal__card--barras-macizas {
+  background:
+    linear-gradient(180deg, rgba(20, 20, 20, 0.12), rgba(20, 20, 20, 0.36)),
+    url("../assets/img/catalogo/00/barrasMasizas.jpg?v=20260607") center/cover no-repeat,
+    #d8d8d8;
+}
+
+.catalog-modal__card--barras-refrigeradas {
+  background:
+    linear-gradient(180deg, rgba(20, 20, 20, 0.12), rgba(20, 20, 20, 0.36)),
+    url("../assets/img/catalogo/00/barrasRefrigeradas.jpg?v=20260607") center/cover no-repeat,
+    #d8d8d8;
+}
+
+.catalog-modal__card--md-sinterizado {
+  background:
+    linear-gradient(180deg, rgba(20, 20, 20, 0.12), rgba(20, 20, 20, 0.36)),
+    url("../assets/img/catalogo/00/MDSinterizado.jpg?v=20260607") center/cover no-repeat,
+    #d8d8d8;
+}
+
 .catalog-modal__card--insertos-bruto {
   background:
     linear-gradient(180deg, rgba(20, 20, 20, 0.12), rgba(20, 20, 20, 0.36)),
@@ -1641,7 +1679,7 @@ body[data-page="home"] .navbar {
 .catalog-modal__card--bujes-bruto {
   background:
     linear-gradient(180deg, rgba(20, 20, 20, 0.12), rgba(20, 20, 20, 0.36)),
-    url("../assets/img/catalogo/00/bujesBruto.avif?v=20260604") center/cover no-repeat,
+    url("../assets/img/catalogo/00/bujesBruto.jpg?v=20260607") center/cover no-repeat,
     #d8d8d8;
 }
 
@@ -1839,11 +1877,6 @@ body[data-page="home"] .navbar {
   font-family: "Kanit", sans-serif;
   font-size: 1.55rem;
   line-height: 1;
-}
-
-#wom-oct-modal .catalog-modal__mark,
-#wom-oct-modal .catalog-modal__card h3 {
-  display: none;
 }
 
 .has-modal-open {
@@ -3676,12 +3709,9 @@ body[data-page="home"] .navbar {
   }
 
   .catalog-modal__card {
-    display: flex;
-    min-height: clamp(17rem, 42vw, 23rem);
+    width: 100%;
+    min-height: 0;
     height: auto;
-    align-items: flex-start;
-    justify-content: flex-end;
-    flex-direction: column;
   }
 
   .catalog-modal__mark {
@@ -3697,6 +3727,12 @@ body[data-page="home"] .navbar {
   }
 
   .catalog-modal__card--spm-bg,
+  .catalog-modal__card--barras,
+  .catalog-modal__card--barras-macizas,
+  .catalog-modal__card--barras-refrigeradas,
+  .catalog-modal__card--md-sinterizado,
+  .catalog-modal__card--insertos-bruto,
+  .catalog-modal__card--bujes-bruto,
   .catalog-modal__card--mecha-escalonada-bg,
   .catalog-modal__card--mecha-helicoidal-bg,
   .catalog-modal__card--mecha-recta-bg,
@@ -3920,13 +3956,10 @@ body[data-page="home"] .navbar {
   }
 
   .catalog-modal__card {
-    display: flex;
-    min-height: clamp(18rem, 72vw, 25rem);
+    width: 100%;
+    min-height: 0;
     height: auto;
     padding: 1rem;
-    align-items: flex-start;
-    justify-content: flex-end;
-    flex-direction: column;
   }
 
   .catalog-modal__mark {
@@ -3943,6 +3976,12 @@ body[data-page="home"] .navbar {
   }
 
   .catalog-modal__card--spm-bg,
+  .catalog-modal__card--barras,
+  .catalog-modal__card--barras-macizas,
+  .catalog-modal__card--barras-refrigeradas,
+  .catalog-modal__card--md-sinterizado,
+  .catalog-modal__card--insertos-bruto,
+  .catalog-modal__card--bujes-bruto,
   .catalog-modal__card--mecha-escalonada-bg,
   .catalog-modal__card--mecha-helicoidal-bg,
   .catalog-modal__card--mecha-recta-bg,
