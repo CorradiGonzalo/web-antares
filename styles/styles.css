@@ -13,7 +13,7 @@
   --color-accent-deep: #7d0f0f;
   --color-gold: #d8a63b;
   --container: min(1120px, calc(100% - 2rem));
-  --header-height: 5rem;
+  --header-height: 7.8rem;
   --radius-sm: 0.25rem;
   --radius-md: 0.5rem;
   --radius-lg: 1rem;
@@ -39,6 +39,7 @@ body {
   font-family: "Barlow", sans-serif;
   background: var(--color-bg);
   color: var(--color-text);
+  padding-top: var(--header-height);
 }
 
 img {
@@ -211,8 +212,10 @@ button {
 }
 
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
   background: rgba(10, 10, 10, 0.92);
   backdrop-filter: blur(14px);
